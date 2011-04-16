@@ -50,3 +50,6 @@
 // Image resource locations for this plug.
 //#define KNOB_FN "img/knob.png"
 //#define BG_FN   "img/bg.png"
+
+//Make sure there is allways a newline character at the end of this file (msvc bug)
+

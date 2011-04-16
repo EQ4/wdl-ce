@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# bash shell script to compile au and vst targets and zip them. 
+# If you modified the build location, uncomment/comment out the appropriate lines
+
 BASEDIR=$(dirname $0)
 
 cd $BASEDIR
@@ -25,14 +28,18 @@ xcodebuild -project IPlugEffect.xcodeproj -xcconfig IPlugEffect.xcconfig -target
 # check binarys to see what architechtures are inside
 echo "verify architectures..."
 echo ""
+#file ~/Library/Audio/Plug-Ins/Components/IPlugEffect.component/Contents/MacOS/IPlugEffect 
 file /Library/Audio/Plug-Ins/Components/IPlugEffect.component/Contents/MacOS/IPlugEffect 
 echo ""
+#file ~/Library/Audio/Plug-Ins/VST/IPlugEffect.vst/Contents/MacOS/IPlugEffect 
 file /Library/Audio/Plug-Ins/VST/IPlugEffect.vst/Contents/MacOS/IPlugEffect 
 
 echo "copying and zipping binaries..."
 echo ""
 cp -R /Library/Audio/Plug-Ins/Components/IPlugEffect.component dist/IPlugEffect.component
 cp -R /Library/Audio/Plug-Ins/VST/IPlugEffect.vst dist/IPlugEffect.vst
+#cp -R ~/Library/Audio/Plug-Ins/Components/IPlugEffect.component dist/IPlugEffect.component
+#cp -R ~/Library/Audio/Plug-Ins/VST/IPlugEffect.vst dist/IPlugEffect.vst
 
 ditto -c -k dist IPlugEffect-mac.zip
 rm -R dist

@@ -12,7 +12,7 @@
 # windows users need to install python 2 (not tested with 3) and set it up so you can run it from the command line
 # see http://www.voidspace.org.uk/python/articles/command_line.shtml
 # this involves adding the python folder e.g. C:\Python27\ to your %PATH% environment variable
-# to get the debugging setup on mac, you have to rename IPlugEffect/IPlugEffect.xcodeproj/oli.pbxuser to match your OSX username,
+# to get the debugging setup on mac, you have to rename IPlugEffect/IPlugEffect.xcodeproj/wdlce.pbxuser to match your OSX username,
 # the script asks you if you want to do this
 
 # USAGE:

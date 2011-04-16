@@ -5,6 +5,9 @@
 // path to iplug folder
 IPLUG_PATH = $(SRCROOT)/../../WDL/IPlug/
 
+// any extra paths to add to all targets/configurations
+//ADDITIONAL_INCLUDE_PATHS = $(SRCROOT)/../../../MyDSP
+
 // Which comipler to use
 COMPILER = 4.2 // 4.0 = GCC 4.0, 4.2
 
@@ -43,7 +46,8 @@ AU_DEFS = AU_API
 DEBUG_DEFS = _DEBUG
 
 // Preprocessor definitions for all Release builds
-RELEASE_DEFS = _NDEBUG
+// If you want to do something different for a demo version you can DEMO_VERSION here and then do #ifdef DEMO_VERSION in your code
+RELEASE_DEFS = _NDEBUG//DEMO_VERSION
 
 // Preprocessor definitions for all Tracer builds
 TRACER_DEFS = TRACER_BUILD
