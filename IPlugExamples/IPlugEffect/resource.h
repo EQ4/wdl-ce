@@ -31,7 +31,7 @@
 #define PLUG_VER 0x00010000
 
 // http://service.steinberg.de/databases/plugin.nsf/plugIn?openForm
-// 4 chars, single quotes. must inclue ONLY one capital letter
+// 4 chars, single quotes. must include ONLY one capital letter
 #define PLUG_UNIQUE_ID 'IplA'
 // make sure this is not the same as BUNDLE_MFR
 #define PLUG_MFR_ID 'Acme'
