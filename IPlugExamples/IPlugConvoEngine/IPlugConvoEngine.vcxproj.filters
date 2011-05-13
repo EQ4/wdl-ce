@@ -131,6 +131,8 @@
     <ClInclude Include="..\..\VST_SDK\aeffectx.h">
       <Filter>IPlug\VST_SDK</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\WDL\convoengine.h" />
+    <ClInclude Include="..\..\WDL\fft.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IPlugConvoEngine.cpp" />
@@ -281,6 +283,8 @@
     <ClCompile Include="..\..\WDL\lice\lice_image.cpp">
       <Filter>IPlug\lice</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\WDL\convoengine.cpp" />
+    <ClCompile Include="..\..\WDL\fft.c" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="IPlugConvoEngine.rc">

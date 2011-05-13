@@ -121,6 +121,12 @@
 		<Unit filename="..\..\WDL\IPlug\Log.h" />
 		<Unit filename="..\..\WDL\IPlug\VSTHosts.cpp" />
 		<Unit filename="..\..\WDL\IPlug\VSTHosts.h" />
+		<Unit filename="..\..\WDL\convoengine.cpp" />
+		<Unit filename="..\..\WDL\convoengine.h" />
+		<Unit filename="..\..\WDL\fft.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\WDL\fft.h" />
 		<Unit filename="..\..\WDL\libpng\png.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -305,6 +305,8 @@
   <ItemGroup>
     <ClInclude Include="..\..\VST_SDK\aeffect.h" />
     <ClInclude Include="..\..\VST_SDK\aeffectx.h" />
+    <ClInclude Include="..\..\WDL\convoengine.h" />
+    <ClInclude Include="..\..\WDL\fft.h" />
     <ClInclude Include="..\..\WDL\IPlug\Containers.h" />
     <ClInclude Include="..\..\WDL\IPlug\Hosts.h" />
     <ClInclude Include="..\..\WDL\IPlug\IControl.h" />
@@ -342,6 +344,8 @@
     <ClInclude Include="IPlugConvoEngine.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\WDL\convoengine.cpp" />
+    <ClCompile Include="..\..\WDL\fft.c" />
     <ClCompile Include="..\..\WDL\IPlug\Hosts.cpp" />
     <ClCompile Include="..\..\WDL\IPlug\IControl.cpp" />
     <ClCompile Include="..\..\WDL\IPlug\IGraphics.cpp" />
