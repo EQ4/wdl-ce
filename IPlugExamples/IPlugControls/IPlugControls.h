@@ -3,12 +3,12 @@
 
 #include "IPlug_include_in_plug_hdr.h"
 
-class IPlugControlsDemo : public IPlug
+class IPlugControls : public IPlug
 {
 public:
 
-  IPlugControlsDemo(IPlugInstanceInfo instanceInfo);
-  ~IPlugControlsDemo();
+  IPlugControls(IPlugInstanceInfo instanceInfo);
+  ~IPlugControls();
 
   void Reset();
   void OnParamChange(int paramIdx);

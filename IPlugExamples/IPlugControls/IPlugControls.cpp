@@ -1,4 +1,4 @@
-#include "IPlugControlsDemo.h"
+#include "IPlugControls.h"
 #include "IPlug_include_in_plug_src.h"
 #include "IControl.h"
 #include "resource.h"
@@ -11,7 +11,7 @@ enum EParams
   kNumParams
 };
 
-IPlugControlsDemo::IPlugControlsDemo(IPlugInstanceInfo instanceInfo)
+IPlugControls::IPlugControls(IPlugInstanceInfo instanceInfo)
 :	IPLUG_CTOR(kNumParams, kNumPrograms, instanceInfo), mGain(1.)
 {
   TRACE;
@@ -23,9 +23,9 @@ IPlugControlsDemo::IPlugControlsDemo(IPlugInstanceInfo instanceInfo)
   MakeDefaultPreset((char *) "-", kNumPrograms);
 }
 
-IPlugControlsDemo::~IPlugControlsDemo() {}
+IPlugControls::~IPlugControls() {}
 
-void IPlugControlsDemo::ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames)
+void IPlugControls::ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames)
 {
   // Mutex is already locked for us.
 
@@ -45,7 +45,7 @@ void IPlugControlsDemo::ProcessDoubleReplacing(double** inputs, double** outputs
   }	
 }
 
-void IPlugControlsDemo::Reset()
+void IPlugControls::Reset()
 {
   TRACE;
   IMutexLock lock(this);
@@ -53,7 +53,7 @@ void IPlugControlsDemo::Reset()
   //double sr = GetSampleRate();
 }
 
-void IPlugControlsDemo::OnParamChange(int paramIdx)
+void IPlugControls::OnParamChange(int paramIdx)
 {
   IMutexLock lock(this);
 

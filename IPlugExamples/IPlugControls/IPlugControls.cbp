@@ -2,17 +2,17 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="IPlugControlsDemo" />
+		<Option title="IPlugControls" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug Win32">
-				<Option output="build-win\bin32\IPlugControlsDemo" prefix_auto="1" extension_auto="1" />
+				<Option output="build-win\bin32\IPlugControls" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="build-win\bin32\" />
 				<Option object_output="build-win\Debug\" />
 				<Option type="3" />
 				<Option compiler="gcc" />
-				<Option parameters="IPlugControlsDemo.dll" />
+				<Option parameters="IPlugControls.dll" />
 				<Option host_application="C:\Program Files\vsthost\vsthost.exe" />
 				<Option createDefFile="1" />
 				<Option createStaticLib="1" />
@@ -26,12 +26,12 @@
 				</Compiler>
 			</Target>
 			<Target title="Release Win32">
-				<Option output="build-win\bin32\IPlugControlsDemo" prefix_auto="1" extension_auto="1" />
+				<Option output="build-win\bin32\IPlugControls" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="build-win\bin32\" />
 				<Option object_output="build-win\Release" />
 				<Option type="3" />
 				<Option compiler="gcc" />
-				<Option parameters="IPlugControlsDemo.dll" />
+				<Option parameters="IPlugControls.dll" />
 				<Option host_application="C:\Program Files\vsthost\vsthost.exe" />
 				<Option createDefFile="1" />
 				<Option createStaticLib="1" />
@@ -45,12 +45,12 @@
 				</Compiler>
 			</Target>
 			<Target title="Tracer Win32">
-				<Option output="build-win\bin32\IPlugControlsDemo" prefix_auto="1" extension_auto="1" />
+				<Option output="build-win\bin32\IPlugControls" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="build-win\bin32\" />
 				<Option object_output="build-win\Tracer" />
 				<Option type="3" />
 				<Option compiler="gcc" />
-				<Option parameters="IPlugControlsDemo.dll" />
+				<Option parameters="IPlugControls.dll" />
 				<Option host_application="C:\Program Files\vsthost\vsthost.exe" />
 				<Option createDefFile="1" />
 				<Option createStaticLib="1" />
@@ -87,8 +87,8 @@
 			<Add library="libodbccp32" />
 			<Add library="liboleaut32" />
 		</Linker>
-		<Unit filename="IPlugControlsDemo.cpp" />
-		<Unit filename="IPlugControlsDemo.h" />
+		<Unit filename="IPlugControls.cpp" />
+		<Unit filename="IPlugControls.h" />
 		<Unit filename="resource.h" />
 		<Unit filename="..\..\WDL\IPlug\Containers.h" />
 		<Unit filename="..\..\WDL\IPlug\Hosts.cpp" />

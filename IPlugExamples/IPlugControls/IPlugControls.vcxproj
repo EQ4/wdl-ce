@@ -140,7 +140,7 @@
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)IPlugControlsDemo.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(OutDir)IPlugControls.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
@@ -173,7 +173,7 @@
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)IPlugControlsDemo.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(OutDir)IPlugControls.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
@@ -339,7 +339,7 @@
     <ClInclude Include="..\..\WDL\zlib\zlib.h" />
     <ClInclude Include="..\..\WDL\zlib\zutil.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="IPlugControlsDemo.h" />
+    <ClInclude Include="IPlugControls.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\WDL\IPlug\Hosts.cpp" />
@@ -391,10 +391,10 @@
     <ClCompile Include="..\..\WDL\zlib\uncompr.c" />
     <ClCompile Include="..\..\WDL\zlib\unzip.c" />
     <ClCompile Include="..\..\WDL\zlib\zutil.c" />
-    <ClCompile Include="IPlugControlsDemo.cpp" />
+    <ClCompile Include="IPlugControls.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="IPlugControlsDemo.rc" />
+    <ResourceCompile Include="IPlugControls.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
