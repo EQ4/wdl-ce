@@ -37,3 +37,4 @@ VST_SDK/aeffectx.h
 *.depend
 *.layout
 *.cbTemp
+*.vcxproj.user
