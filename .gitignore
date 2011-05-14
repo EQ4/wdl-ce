@@ -33,3 +33,7 @@ VST_SDK/aeffectx.h
 #*.zip
 
 
+
+*.depend
+*.layout
+*.cbTemp
