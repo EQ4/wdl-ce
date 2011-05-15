@@ -30,6 +30,8 @@
  
 */
 
+
+
 #ifndef _WDL_HEAPBUF_H_
 #define _WDL_HEAPBUF_H_
 
@@ -44,6 +46,11 @@
 #else
 #define WDL_HEAPBUF_TRACEPARM(x)
 #endif
+
+// OL - Added these to compile on gcc 4.2 osx
+#include <stdlib.h>
+#include <string.h>
+//
 
 #include "wdltypes.h"
 

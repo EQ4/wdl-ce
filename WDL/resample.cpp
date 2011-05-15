@@ -11,6 +11,11 @@
 #define PI 3.1415926535897932384626433832795
 #endif
 
+// OL - Added these to compile on gcc 4.2 osx
+#define max(a,b) ((a)>(b)?(a):(b))
+#define min(a,b) ((a)<(b)?(a):(b))
+//
+
 class WDL_Resampler::WDL_Resampler_IIRFilter
 {
 public:
