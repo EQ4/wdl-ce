@@ -445,6 +445,18 @@
 		4F55733C12C7F49C003A4AD1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E41CC40D14C2B000A0943B /* CoreServices.framework */; };
 		4F55733D12C7F49C003A4AD1 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E41CB90D14C2A900A0943B /* CoreAudio.framework */; };
 		4F55733F12C7F49C003A4AD1 /* IPlugAU.r in Rez */ = {isa = PBXBuildFile; fileRef = 4F082B791116E82A0063D30F /* IPlugAU.r */; };
+		4FA3AFBD137FC4E500F56841 /* resample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3AFBB137FC4E500F56841 /* resample.cpp */; };
+		4FA3AFBE137FC4E500F56841 /* resample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3AFBB137FC4E500F56841 /* resample.cpp */; };
+		4FA3AFBF137FC4E500F56841 /* resample.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FA3AFBC137FC4E500F56841 /* resample.h */; };
+		4FA3AFC0137FC4E500F56841 /* resample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3AFBB137FC4E500F56841 /* resample.cpp */; };
+		4FA3AFC1137FC4E500F56841 /* resample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3AFBB137FC4E500F56841 /* resample.cpp */; };
+		4FA3AFC2137FC4E500F56841 /* resample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3AFBB137FC4E500F56841 /* resample.cpp */; };
+		4FA3AFC3137FC4E500F56841 /* resample.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FA3AFBC137FC4E500F56841 /* resample.h */; };
+		4FA3AFC4137FC4E500F56841 /* resample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3AFBB137FC4E500F56841 /* resample.cpp */; };
+		4FA3AFC5137FC4E500F56841 /* resample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3AFBB137FC4E500F56841 /* resample.cpp */; };
+		4FA3AFC6137FC4E500F56841 /* resample.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FA3AFBC137FC4E500F56841 /* resample.h */; };
+		4FA3AFC7137FC4E500F56841 /* resample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3AFBB137FC4E500F56841 /* resample.cpp */; };
+		4FA3AFC8137FC4E500F56841 /* resample.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FA3AFBC137FC4E500F56841 /* resample.h */; };
 		4FB2E8E212BBAEA500BCC4DD /* IPlugVST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2E7DF12BBAEA500BCC4DD /* IPlugVST.cpp */; };
 		4FB2E8E312BBAEA500BCC4DD /* IPlugBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2E7E112BBAEA500BCC4DD /* IPlugBase.cpp */; };
 		4FB2E8E412BBAEA500BCC4DD /* Hosts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2E7E212BBAEA500BCC4DD /* Hosts.cpp */; };
@@ -706,6 +718,8 @@
 		4F3D43BA1347811600AD872F /* IPlugResampler.vst */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPlugResampler.vst; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3D4436134782B400AD872F /* IPlugResampler.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPlugResampler.component; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F55734412C7F49C003A4AD1 /* IPlugResampler.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPlugResampler.component; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA3AFBB137FC4E500F56841 /* resample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = resample.cpp; path = ../../WDL/resample.cpp; sourceTree = SOURCE_ROOT; };
+		4FA3AFBC137FC4E500F56841 /* resample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resample.h; path = ../../WDL/resample.h; sourceTree = SOURCE_ROOT; };
 		4FB2E7D712BBAEA500BCC4DD /* aeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffect.h; sourceTree = "<group>"; };
 		4FB2E7D812BBAEA500BCC4DD /* aeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffectx.h; sourceTree = "<group>"; };
 		4FB2E7DA12BBAEA500BCC4DD /* IPlug_include_in_plug_src.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPlug_include_in_plug_src.h; path = ../../WDL/IPlug/IPlug_include_in_plug_src.h; sourceTree = SOURCE_ROOT; };
@@ -870,6 +884,8 @@
 		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				4FA3AFBB137FC4E500F56841 /* resample.cpp */,
+				4FA3AFBC137FC4E500F56841 /* resample.h */,
 				4FB2E75012BBAE8F00BCC4DD /* IPlug */,
 				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
 				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
@@ -1139,6 +1155,7 @@
 				4FF01705134E1500001447BA /* swell-functions.h in Headers */,
 				4FF01706134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171A134E153A001447BA /* heapbuf.h in Headers */,
+				4FA3AFBF137FC4E500F56841 /* resample.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1192,6 +1209,7 @@
 				4FF0170B134E1500001447BA /* swell-functions.h in Headers */,
 				4FF0170C134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171D134E153A001447BA /* heapbuf.h in Headers */,
+				4FA3AFC8137FC4E500F56841 /* resample.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1245,6 +1263,7 @@
 				4FF01707134E1500001447BA /* swell-functions.h in Headers */,
 				4FF01708134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171B134E153A001447BA /* heapbuf.h in Headers */,
+				4FA3AFC6137FC4E500F56841 /* resample.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1298,6 +1317,7 @@
 				4FF01709134E1500001447BA /* swell-functions.h in Headers */,
 				4FF0170A134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171C134E153A001447BA /* heapbuf.h in Headers */,
+				4FA3AFC3137FC4E500F56841 /* resample.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1632,6 +1652,7 @@
 				4F20EEFA132C69FE0030E34C /* lice_textnew.cpp in Sources */,
 				4F20EEFB132C69FE0030E34C /* lice.cpp in Sources */,
 				4F20EEFC132C69FE0030E34C /* swell-gdi.mm in Sources */,
+				4FA3AFC0137FC4E500F56841 /* resample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1691,6 +1712,7 @@
 				4F20EC45132C5C9B0030E34C /* lice_textnew.cpp in Sources */,
 				4F20EC46132C5C9B0030E34C /* lice.cpp in Sources */,
 				4F20EC48132C5C9B0030E34C /* swell-gdi.mm in Sources */,
+				4FA3AFBE137FC4E500F56841 /* resample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1748,6 +1770,7 @@
 				4F3D43B01347811600AD872F /* lice_textnew.cpp in Sources */,
 				4F3D43B11347811600AD872F /* lice.cpp in Sources */,
 				4F3D43B21347811600AD872F /* swell-gdi.mm in Sources */,
+				4FA3AFC4137FC4E500F56841 /* resample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1807,6 +1830,7 @@
 				4F3D4425134782B400AD872F /* lice_textnew.cpp in Sources */,
 				4F3D4426134782B400AD872F /* lice.cpp in Sources */,
 				4F3D4427134782B400AD872F /* swell-gdi.mm in Sources */,
+				4FA3AFC7137FC4E500F56841 /* resample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1866,6 +1890,7 @@
 				4F20ECBA132C5C9B0030E34C /* lice_textnew.cpp in Sources */,
 				4F20ECBB132C5C9B0030E34C /* lice.cpp in Sources */,
 				4F20ECBD132C5C9B0030E34C /* swell-gdi.mm in Sources */,
+				4FA3AFC5137FC4E500F56841 /* resample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1923,6 +1948,7 @@
 				4FB67682132D6BC70020162C /* lice_textnew.cpp in Sources */,
 				4FB67683132D6BC70020162C /* lice.cpp in Sources */,
 				4FB67684132D6BC70020162C /* swell-gdi.mm in Sources */,
+				4FA3AFC1137FC4E500F56841 /* resample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1982,6 +2008,7 @@
 				4FB6772E132D6C3C0020162C /* lice_textnew.cpp in Sources */,
 				4FB6772F132D6C3C0020162C /* lice.cpp in Sources */,
 				4FB67730132D6C3C0020162C /* swell-gdi.mm in Sources */,
+				4FA3AFC2137FC4E500F56841 /* resample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2039,6 +2066,7 @@
 				4F20EBD3132C5C9B0030E34C /* lice_textnew.cpp in Sources */,
 				4F20EBD4132C5C9B0030E34C /* lice.cpp in Sources */,
 				4F20EBD5132C5C9B0030E34C /* swell-gdi.mm in Sources */,
+				4FA3AFBD137FC4E500F56841 /* resample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

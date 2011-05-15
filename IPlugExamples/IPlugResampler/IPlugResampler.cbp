@@ -189,6 +189,8 @@
 		<Unit filename="..\..\WDL\lice\lice_text.cpp" />
 		<Unit filename="..\..\WDL\lice\lice_text.h" />
 		<Unit filename="..\..\WDL\lice\lice_textnew.cpp" />
+		<Unit filename="..\..\WDL\resample.cpp" />
+		<Unit filename="..\..\WDL\resample.h" />
 		<Unit filename="..\..\WDL\zlib\adler32.c">
 			<Option compilerVar="CC" />
 		</Unit>

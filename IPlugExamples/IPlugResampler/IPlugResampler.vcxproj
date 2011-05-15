@@ -325,6 +325,7 @@
     <ClInclude Include="..\..\WDL\lice\lice_combine.h" />
     <ClInclude Include="..\..\WDL\lice\lice_extended.h" />
     <ClInclude Include="..\..\WDL\lice\lice_text.h" />
+    <ClInclude Include="..\..\WDL\resample.h" />
     <ClInclude Include="..\..\WDL\zlib\crc32.h" />
     <ClInclude Include="..\..\WDL\zlib\deflate.h" />
     <ClInclude Include="..\..\WDL\zlib\inffast.h" />
@@ -377,6 +378,7 @@
     <ClCompile Include="..\..\WDL\lice\lice_png.cpp" />
     <ClCompile Include="..\..\WDL\lice\lice_text.cpp" />
     <ClCompile Include="..\..\WDL\lice\lice_textnew.cpp" />
+    <ClCompile Include="..\..\WDL\resample.cpp" />
     <ClCompile Include="..\..\WDL\zlib\adler32.c" />
     <ClCompile Include="..\..\WDL\zlib\compress.c" />
     <ClCompile Include="..\..\WDL\zlib\crc32.c" />

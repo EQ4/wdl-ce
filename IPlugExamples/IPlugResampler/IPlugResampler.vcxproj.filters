@@ -131,6 +131,7 @@
     <ClInclude Include="..\..\VST_SDK\aeffectx.h">
       <Filter>IPlug\VST_SDK</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\WDL\resample.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IPlugResampler.cpp" />
@@ -281,6 +282,7 @@
     <ClCompile Include="..\..\WDL\lice\lice_image.cpp">
       <Filter>IPlug\lice</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\WDL\resample.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="IPlugResampler.rc">
