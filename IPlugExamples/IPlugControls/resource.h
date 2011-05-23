@@ -44,12 +44,34 @@
 #define PLUG_DOES_STATE_CHUNKS 0
 
 // Unique IDs for each image resource.
-//#define KNOB_ID 101
-//#define BG_ID   102
+#define BG_ID					100
+#define ISWITCHCONTROL_2_ID		101
+#define ISWITCHCONTROL_3_ID		102
+#define IRADIOBUTTONSCONTROL_ID 103
+#define ICONTACTCONTROL_ID		104
+#define IFADERCONTROL_HORIZ_ID	105
+#define IFADERCONTROL_VERT_ID	106
+#define IKNOBROTATERCONTROL_ID	107
+#define IKNOBMULTICONTROL_ID	108
+#define IKRMC_BASE_ID			109
+#define IKRMC_MASK_ID			110
+#define	IKRMC_TOP_ID			111
+#define IBOC_ID					112
 
 // Image resource locations for this plug.
-//#define KNOB_FN "img/knob.png"
-//#define BG_FN   "img/bg.png"
+#define BG_FN					"img/BG_1024x640.png"
+#define ISWITCHCONTROL_2_FN		"img/ISwitchControl_x2.png"
+#define ISWITCHCONTROL_3_FN		"img/ISwitchControl_x3.png"
+#define IRADIOBUTTONSCONTROL_FN "img/IRadioButtonsControl_x2.png"
+#define ICONTACTCONTROL_FN		"img/IContactControl_x2.png"
+#define IFADERCONTROL_HORIZ_FN	"img/IFaderControl_Horiz.png"
+#define IFADERCONTROL_VERT_FN	"img/IFaderControl_Vert.png"
+#define IKNOBROTATERCONTROL_FN	"img/IKnobRotaterControl.png"
+#define IKNOBMULTICONTROL_FN	"img/IKnobMultiControl_x14.png"
+#define IKRMC_BASE_FN			"img/IKRMC_Base.png"
+#define IKRMC_MASK_FN			"img/IKRMC_Mask.png"
+#define IKRMC_TOP_FN			"img/IKRMC_Top.png"
+#define IBOC_FN					"img/IBitmapOverlayControl.png"
 
 //Make sure there is allways a newline character at the end of this file (msvc bug)
 
