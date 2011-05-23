@@ -3,6 +3,7 @@
 	<FileVersion major="1" minor="6" />
 	<Project>
 		<Option title="IPlugControls" />
+		<Option makefile="MAKEFILE" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -52,33 +53,27 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wno-write-strings -msse2 -ffast-math -mstackrealign" />
-			<Add option="-DVST_FORCE_DEPRECATED" />
+			<Add option="-msse2" />
+			<Add option="-ffast-math" />
+			<Add option="-Wno-write-strings" />
 			<Add option="-DVST_API" />
+			<Add option="-DVST_FORCE_DEPRECATED" />
 			<Add option="-DWIN32" />
-			<Add option="-D_WIN32_WINNT=0x0501" />
-			<Add option="-DWINVER=0x0501" />
-			<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
-			<Add option="-DPNG_LIBPNG_SPECIALBUILD" />
 			<Add option="-DPNG_NO_ASSEMBLER_CODE" />
+			<Add option="-DPNG_LIBPNG_SPECIALBUILD" />
+			<Add option="-DPNG_USE_PNGVCRD" />
+			<Add option="-DDLL_BUILD" />
 			<Add directory="..\..\WDL\IPlug" />
 			<Add directory="." />
 			<Add directory="..\..\VST_SDK\" />
 			<Add directory="..\..\WDL\lice" />
 		</Compiler>
 		<Linker>
-			<Add library="libkernel32" />
-			<Add library="libwininet" />
+			<Add library="libshell32" />
 			<Add library="libuser32" />
 			<Add library="libgdi32" />
-			<Add library="libwinspool" />
 			<Add library="libcomdlg32" />
-			<Add library="libadvapi32" />
-			<Add library="libshell32" />
-			<Add library="libole32" />
-			<Add library="libuuid" />
-			<Add library="libodbc32" />
-			<Add library="libodbccp32" />
-			<Add library="liboleaut32" />
+			<Add library="libwininet" />
 		</Linker>
 		<Unit filename="IPlugControls.cpp" />
 		<Unit filename="IPlugControls.h" />
