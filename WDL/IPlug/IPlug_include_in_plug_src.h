@@ -1,12 +1,12 @@
 #ifndef _IPLUG_INCLUDE_SRC_
 #define _IPLUG_INCLUDE_SRC_
 
-// Include this file in the main source for your plugin, 
+// Include this file in the main source for your plugin,
 // after #including the main header for your plugin.
 
 #if defined _WIN32
   HINSTANCE gHInstance = 0;
-	BOOL WINAPI DllMain(HINSTANCE hDllInst, DWORD fdwReason, LPVOID res)
+	extern "C" BOOL WINAPI DllMain(HINSTANCE hDllInst, DWORD fdwReason, LPVOID res)
 	{
     gHInstance = hDllInst;
     return TRUE;
@@ -23,22 +23,22 @@
     IGraphicsMac* pGraphics = new IGraphicsMac(pPlug, w, h, FPS);
     pGraphics->SetBundleID(BUNDLE_ID);
     return pGraphics;
-  }   
-#else 
+  }
+#else
   #error "No OS defined!"
-#endif 
+#endif
 
 #if defined VST_API
   extern "C"
   {
     EXPORT void* VSTPluginMain(audioMasterCallback hostCallback)
-    {    
+    {
       static WDL_Mutex sMutex;
       WDL_MutexLock lock(&sMutex);
       IPlugInstanceInfo instanceInfo;
       instanceInfo.mVSTHostCallback = hostCallback;
       IPlugVST* pPlug = new PLUG_CLASS_NAME(instanceInfo);
-      if (pPlug) { 
+      if (pPlug) {
         pPlug->EnsureDefaultPreset();
         pPlug->mAEffect.numPrograms = MAX(pPlug->mAEffect.numPrograms, 1);
         return &(pPlug->mAEffect);
