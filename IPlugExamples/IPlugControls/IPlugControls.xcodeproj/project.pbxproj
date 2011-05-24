@@ -445,110 +445,110 @@
 		4F55733C12C7F49C003A4AD1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E41CC40D14C2B000A0943B /* CoreServices.framework */; };
 		4F55733D12C7F49C003A4AD1 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E41CB90D14C2A900A0943B /* CoreAudio.framework */; };
 		4F55733F12C7F49C003A4AD1 /* IPlugAU.r in Rez */ = {isa = PBXBuildFile; fileRef = 4F082B791116E82A0063D30F /* IPlugAU.r */; };
-		4FA40977138A7329007A02FB /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096A138A7329007A02FB /* BG_1024x640.png */; };
-		4FA40978138A7329007A02FB /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096B138A7329007A02FB /* IBitmapOverlayControl.png */; };
-		4FA40979138A7329007A02FB /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096C138A7329007A02FB /* IContactControl_x2.png */; };
-		4FA4097A138A7329007A02FB /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096D138A7329007A02FB /* IFaderControl_Horiz.png */; };
-		4FA4097B138A7329007A02FB /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096E138A7329007A02FB /* IFaderControl_Vert.png */; };
-		4FA4097C138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096F138A7329007A02FB /* IKnobMultiControl_x14.png */; };
-		4FA4097D138A7329007A02FB /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40970138A7329007A02FB /* IKnobRotaterControl.png */; };
-		4FA4097E138A7329007A02FB /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40971138A7329007A02FB /* IKRMC_Base.png */; };
-		4FA4097F138A7329007A02FB /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40972138A7329007A02FB /* IKRMC_Mask.png */; };
-		4FA40980138A7329007A02FB /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40973138A7329007A02FB /* IKRMC_Top.png */; };
-		4FA40981138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40974138A7329007A02FB /* IRadioButtonsControl_x2.png */; };
-		4FA40982138A7329007A02FB /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40975138A7329007A02FB /* ISwitchControl_x2.png */; };
-		4FA40983138A7329007A02FB /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40976138A7329007A02FB /* ISwitchControl_x3.png */; };
-		4FA40984138A7329007A02FB /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096A138A7329007A02FB /* BG_1024x640.png */; };
-		4FA40985138A7329007A02FB /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096B138A7329007A02FB /* IBitmapOverlayControl.png */; };
-		4FA40986138A7329007A02FB /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096C138A7329007A02FB /* IContactControl_x2.png */; };
-		4FA40987138A7329007A02FB /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096D138A7329007A02FB /* IFaderControl_Horiz.png */; };
-		4FA40988138A7329007A02FB /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096E138A7329007A02FB /* IFaderControl_Vert.png */; };
-		4FA40989138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096F138A7329007A02FB /* IKnobMultiControl_x14.png */; };
-		4FA4098A138A7329007A02FB /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40970138A7329007A02FB /* IKnobRotaterControl.png */; };
-		4FA4098B138A7329007A02FB /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40971138A7329007A02FB /* IKRMC_Base.png */; };
-		4FA4098C138A7329007A02FB /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40972138A7329007A02FB /* IKRMC_Mask.png */; };
-		4FA4098D138A7329007A02FB /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40973138A7329007A02FB /* IKRMC_Top.png */; };
-		4FA4098E138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40974138A7329007A02FB /* IRadioButtonsControl_x2.png */; };
-		4FA4098F138A7329007A02FB /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40975138A7329007A02FB /* ISwitchControl_x2.png */; };
-		4FA40990138A7329007A02FB /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40976138A7329007A02FB /* ISwitchControl_x3.png */; };
-		4FA40991138A7329007A02FB /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096A138A7329007A02FB /* BG_1024x640.png */; };
-		4FA40992138A7329007A02FB /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096B138A7329007A02FB /* IBitmapOverlayControl.png */; };
-		4FA40993138A7329007A02FB /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096C138A7329007A02FB /* IContactControl_x2.png */; };
-		4FA40994138A7329007A02FB /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096D138A7329007A02FB /* IFaderControl_Horiz.png */; };
-		4FA40995138A7329007A02FB /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096E138A7329007A02FB /* IFaderControl_Vert.png */; };
-		4FA40996138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096F138A7329007A02FB /* IKnobMultiControl_x14.png */; };
-		4FA40997138A7329007A02FB /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40970138A7329007A02FB /* IKnobRotaterControl.png */; };
-		4FA40998138A7329007A02FB /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40971138A7329007A02FB /* IKRMC_Base.png */; };
-		4FA40999138A7329007A02FB /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40972138A7329007A02FB /* IKRMC_Mask.png */; };
-		4FA4099A138A7329007A02FB /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40973138A7329007A02FB /* IKRMC_Top.png */; };
-		4FA4099B138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40974138A7329007A02FB /* IRadioButtonsControl_x2.png */; };
-		4FA4099C138A7329007A02FB /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40975138A7329007A02FB /* ISwitchControl_x2.png */; };
-		4FA4099D138A7329007A02FB /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40976138A7329007A02FB /* ISwitchControl_x3.png */; };
-		4FA4099E138A7329007A02FB /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096A138A7329007A02FB /* BG_1024x640.png */; };
-		4FA4099F138A7329007A02FB /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096B138A7329007A02FB /* IBitmapOverlayControl.png */; };
-		4FA409A0138A7329007A02FB /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096C138A7329007A02FB /* IContactControl_x2.png */; };
-		4FA409A1138A7329007A02FB /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096D138A7329007A02FB /* IFaderControl_Horiz.png */; };
-		4FA409A2138A7329007A02FB /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096E138A7329007A02FB /* IFaderControl_Vert.png */; };
-		4FA409A3138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096F138A7329007A02FB /* IKnobMultiControl_x14.png */; };
-		4FA409A4138A7329007A02FB /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40970138A7329007A02FB /* IKnobRotaterControl.png */; };
-		4FA409A5138A7329007A02FB /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40971138A7329007A02FB /* IKRMC_Base.png */; };
-		4FA409A6138A7329007A02FB /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40972138A7329007A02FB /* IKRMC_Mask.png */; };
-		4FA409A7138A7329007A02FB /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40973138A7329007A02FB /* IKRMC_Top.png */; };
-		4FA409A8138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40974138A7329007A02FB /* IRadioButtonsControl_x2.png */; };
-		4FA409A9138A7329007A02FB /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40975138A7329007A02FB /* ISwitchControl_x2.png */; };
-		4FA409AA138A7329007A02FB /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40976138A7329007A02FB /* ISwitchControl_x3.png */; };
-		4FA409AB138A7329007A02FB /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096A138A7329007A02FB /* BG_1024x640.png */; };
-		4FA409AC138A7329007A02FB /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096B138A7329007A02FB /* IBitmapOverlayControl.png */; };
-		4FA409AD138A7329007A02FB /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096C138A7329007A02FB /* IContactControl_x2.png */; };
-		4FA409AE138A7329007A02FB /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096D138A7329007A02FB /* IFaderControl_Horiz.png */; };
-		4FA409AF138A7329007A02FB /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096E138A7329007A02FB /* IFaderControl_Vert.png */; };
-		4FA409B0138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096F138A7329007A02FB /* IKnobMultiControl_x14.png */; };
-		4FA409B1138A7329007A02FB /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40970138A7329007A02FB /* IKnobRotaterControl.png */; };
-		4FA409B2138A7329007A02FB /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40971138A7329007A02FB /* IKRMC_Base.png */; };
-		4FA409B3138A7329007A02FB /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40972138A7329007A02FB /* IKRMC_Mask.png */; };
-		4FA409B4138A7329007A02FB /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40973138A7329007A02FB /* IKRMC_Top.png */; };
-		4FA409B5138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40974138A7329007A02FB /* IRadioButtonsControl_x2.png */; };
-		4FA409B6138A7329007A02FB /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40975138A7329007A02FB /* ISwitchControl_x2.png */; };
-		4FA409B7138A7329007A02FB /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40976138A7329007A02FB /* ISwitchControl_x3.png */; };
-		4FA409B8138A7329007A02FB /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096A138A7329007A02FB /* BG_1024x640.png */; };
-		4FA409B9138A7329007A02FB /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096B138A7329007A02FB /* IBitmapOverlayControl.png */; };
-		4FA409BA138A7329007A02FB /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096C138A7329007A02FB /* IContactControl_x2.png */; };
-		4FA409BB138A7329007A02FB /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096D138A7329007A02FB /* IFaderControl_Horiz.png */; };
-		4FA409BC138A7329007A02FB /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096E138A7329007A02FB /* IFaderControl_Vert.png */; };
-		4FA409BD138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096F138A7329007A02FB /* IKnobMultiControl_x14.png */; };
-		4FA409BE138A7329007A02FB /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40970138A7329007A02FB /* IKnobRotaterControl.png */; };
-		4FA409BF138A7329007A02FB /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40971138A7329007A02FB /* IKRMC_Base.png */; };
-		4FA409C0138A7329007A02FB /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40972138A7329007A02FB /* IKRMC_Mask.png */; };
-		4FA409C1138A7329007A02FB /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40973138A7329007A02FB /* IKRMC_Top.png */; };
-		4FA409C2138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40974138A7329007A02FB /* IRadioButtonsControl_x2.png */; };
-		4FA409C3138A7329007A02FB /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40975138A7329007A02FB /* ISwitchControl_x2.png */; };
-		4FA409C4138A7329007A02FB /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40976138A7329007A02FB /* ISwitchControl_x3.png */; };
-		4FA409C5138A7329007A02FB /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096A138A7329007A02FB /* BG_1024x640.png */; };
-		4FA409C6138A7329007A02FB /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096B138A7329007A02FB /* IBitmapOverlayControl.png */; };
-		4FA409C7138A7329007A02FB /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096C138A7329007A02FB /* IContactControl_x2.png */; };
-		4FA409C8138A7329007A02FB /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096D138A7329007A02FB /* IFaderControl_Horiz.png */; };
-		4FA409C9138A7329007A02FB /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096E138A7329007A02FB /* IFaderControl_Vert.png */; };
-		4FA409CA138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096F138A7329007A02FB /* IKnobMultiControl_x14.png */; };
-		4FA409CB138A7329007A02FB /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40970138A7329007A02FB /* IKnobRotaterControl.png */; };
-		4FA409CC138A7329007A02FB /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40971138A7329007A02FB /* IKRMC_Base.png */; };
-		4FA409CD138A7329007A02FB /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40972138A7329007A02FB /* IKRMC_Mask.png */; };
-		4FA409CE138A7329007A02FB /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40973138A7329007A02FB /* IKRMC_Top.png */; };
-		4FA409CF138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40974138A7329007A02FB /* IRadioButtonsControl_x2.png */; };
-		4FA409D0138A7329007A02FB /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40975138A7329007A02FB /* ISwitchControl_x2.png */; };
-		4FA409D1138A7329007A02FB /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40976138A7329007A02FB /* ISwitchControl_x3.png */; };
-		4FA409D2138A7329007A02FB /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096A138A7329007A02FB /* BG_1024x640.png */; };
-		4FA409D3138A7329007A02FB /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096B138A7329007A02FB /* IBitmapOverlayControl.png */; };
-		4FA409D4138A7329007A02FB /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096C138A7329007A02FB /* IContactControl_x2.png */; };
-		4FA409D5138A7329007A02FB /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096D138A7329007A02FB /* IFaderControl_Horiz.png */; };
-		4FA409D6138A7329007A02FB /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096E138A7329007A02FB /* IFaderControl_Vert.png */; };
-		4FA409D7138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4096F138A7329007A02FB /* IKnobMultiControl_x14.png */; };
-		4FA409D8138A7329007A02FB /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40970138A7329007A02FB /* IKnobRotaterControl.png */; };
-		4FA409D9138A7329007A02FB /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40971138A7329007A02FB /* IKRMC_Base.png */; };
-		4FA409DA138A7329007A02FB /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40972138A7329007A02FB /* IKRMC_Mask.png */; };
-		4FA409DB138A7329007A02FB /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40973138A7329007A02FB /* IKRMC_Top.png */; };
-		4FA409DC138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40974138A7329007A02FB /* IRadioButtonsControl_x2.png */; };
-		4FA409DD138A7329007A02FB /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40975138A7329007A02FB /* ISwitchControl_x2.png */; };
-		4FA409DE138A7329007A02FB /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA40976138A7329007A02FB /* ISwitchControl_x3.png */; };
+		4F77EFAB138BEFFE00073692 /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9E138BEFFE00073692 /* BG_1024x640.png */; };
+		4F77EFAC138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9F138BEFFE00073692 /* IBitmapOverlayControl.png */; };
+		4F77EFAD138BEFFE00073692 /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA0138BEFFE00073692 /* IContactControl_x2.png */; };
+		4F77EFAE138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA1138BEFFE00073692 /* IFaderControl_Horiz.png */; };
+		4F77EFAF138BEFFE00073692 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA2138BEFFE00073692 /* IFaderControl_Vert.png */; };
+		4F77EFB0138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA3138BEFFE00073692 /* IKnobMultiControl_x14.png */; };
+		4F77EFB1138BEFFE00073692 /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA4138BEFFE00073692 /* IKnobRotaterControl.png */; };
+		4F77EFB2138BEFFE00073692 /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA5138BEFFE00073692 /* IKRMC_Base.png */; };
+		4F77EFB3138BEFFE00073692 /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA6138BEFFE00073692 /* IKRMC_Mask.png */; };
+		4F77EFB4138BEFFE00073692 /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA7138BEFFE00073692 /* IKRMC_Top.png */; };
+		4F77EFB5138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA8138BEFFE00073692 /* IRadioButtonsControl_x2.png */; };
+		4F77EFB6138BEFFE00073692 /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA9138BEFFE00073692 /* ISwitchControl_x2.png */; };
+		4F77EFB7138BEFFE00073692 /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFAA138BEFFE00073692 /* ISwitchControl_x3.png */; };
+		4F77EFB8138BEFFE00073692 /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9E138BEFFE00073692 /* BG_1024x640.png */; };
+		4F77EFB9138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9F138BEFFE00073692 /* IBitmapOverlayControl.png */; };
+		4F77EFBA138BEFFE00073692 /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA0138BEFFE00073692 /* IContactControl_x2.png */; };
+		4F77EFBB138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA1138BEFFE00073692 /* IFaderControl_Horiz.png */; };
+		4F77EFBC138BEFFE00073692 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA2138BEFFE00073692 /* IFaderControl_Vert.png */; };
+		4F77EFBD138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA3138BEFFE00073692 /* IKnobMultiControl_x14.png */; };
+		4F77EFBE138BEFFE00073692 /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA4138BEFFE00073692 /* IKnobRotaterControl.png */; };
+		4F77EFBF138BEFFE00073692 /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA5138BEFFE00073692 /* IKRMC_Base.png */; };
+		4F77EFC0138BEFFE00073692 /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA6138BEFFE00073692 /* IKRMC_Mask.png */; };
+		4F77EFC1138BEFFE00073692 /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA7138BEFFE00073692 /* IKRMC_Top.png */; };
+		4F77EFC2138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA8138BEFFE00073692 /* IRadioButtonsControl_x2.png */; };
+		4F77EFC3138BEFFE00073692 /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA9138BEFFE00073692 /* ISwitchControl_x2.png */; };
+		4F77EFC4138BEFFE00073692 /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFAA138BEFFE00073692 /* ISwitchControl_x3.png */; };
+		4F77EFC5138BEFFE00073692 /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9E138BEFFE00073692 /* BG_1024x640.png */; };
+		4F77EFC6138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9F138BEFFE00073692 /* IBitmapOverlayControl.png */; };
+		4F77EFC7138BEFFE00073692 /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA0138BEFFE00073692 /* IContactControl_x2.png */; };
+		4F77EFC8138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA1138BEFFE00073692 /* IFaderControl_Horiz.png */; };
+		4F77EFC9138BEFFE00073692 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA2138BEFFE00073692 /* IFaderControl_Vert.png */; };
+		4F77EFCA138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA3138BEFFE00073692 /* IKnobMultiControl_x14.png */; };
+		4F77EFCB138BEFFE00073692 /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA4138BEFFE00073692 /* IKnobRotaterControl.png */; };
+		4F77EFCC138BEFFE00073692 /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA5138BEFFE00073692 /* IKRMC_Base.png */; };
+		4F77EFCD138BEFFE00073692 /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA6138BEFFE00073692 /* IKRMC_Mask.png */; };
+		4F77EFCE138BEFFE00073692 /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA7138BEFFE00073692 /* IKRMC_Top.png */; };
+		4F77EFCF138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA8138BEFFE00073692 /* IRadioButtonsControl_x2.png */; };
+		4F77EFD0138BEFFE00073692 /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA9138BEFFE00073692 /* ISwitchControl_x2.png */; };
+		4F77EFD1138BEFFE00073692 /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFAA138BEFFE00073692 /* ISwitchControl_x3.png */; };
+		4F77EFD2138BEFFE00073692 /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9E138BEFFE00073692 /* BG_1024x640.png */; };
+		4F77EFD3138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9F138BEFFE00073692 /* IBitmapOverlayControl.png */; };
+		4F77EFD4138BEFFE00073692 /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA0138BEFFE00073692 /* IContactControl_x2.png */; };
+		4F77EFD5138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA1138BEFFE00073692 /* IFaderControl_Horiz.png */; };
+		4F77EFD6138BEFFE00073692 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA2138BEFFE00073692 /* IFaderControl_Vert.png */; };
+		4F77EFD7138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA3138BEFFE00073692 /* IKnobMultiControl_x14.png */; };
+		4F77EFD8138BEFFE00073692 /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA4138BEFFE00073692 /* IKnobRotaterControl.png */; };
+		4F77EFD9138BEFFE00073692 /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA5138BEFFE00073692 /* IKRMC_Base.png */; };
+		4F77EFDA138BEFFE00073692 /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA6138BEFFE00073692 /* IKRMC_Mask.png */; };
+		4F77EFDB138BEFFE00073692 /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA7138BEFFE00073692 /* IKRMC_Top.png */; };
+		4F77EFDC138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA8138BEFFE00073692 /* IRadioButtonsControl_x2.png */; };
+		4F77EFDD138BEFFE00073692 /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA9138BEFFE00073692 /* ISwitchControl_x2.png */; };
+		4F77EFDE138BEFFE00073692 /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFAA138BEFFE00073692 /* ISwitchControl_x3.png */; };
+		4F77EFDF138BEFFE00073692 /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9E138BEFFE00073692 /* BG_1024x640.png */; };
+		4F77EFE0138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9F138BEFFE00073692 /* IBitmapOverlayControl.png */; };
+		4F77EFE1138BEFFE00073692 /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA0138BEFFE00073692 /* IContactControl_x2.png */; };
+		4F77EFE2138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA1138BEFFE00073692 /* IFaderControl_Horiz.png */; };
+		4F77EFE3138BEFFE00073692 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA2138BEFFE00073692 /* IFaderControl_Vert.png */; };
+		4F77EFE4138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA3138BEFFE00073692 /* IKnobMultiControl_x14.png */; };
+		4F77EFE5138BEFFE00073692 /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA4138BEFFE00073692 /* IKnobRotaterControl.png */; };
+		4F77EFE6138BEFFE00073692 /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA5138BEFFE00073692 /* IKRMC_Base.png */; };
+		4F77EFE7138BEFFE00073692 /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA6138BEFFE00073692 /* IKRMC_Mask.png */; };
+		4F77EFE8138BEFFE00073692 /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA7138BEFFE00073692 /* IKRMC_Top.png */; };
+		4F77EFE9138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA8138BEFFE00073692 /* IRadioButtonsControl_x2.png */; };
+		4F77EFEA138BEFFE00073692 /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA9138BEFFE00073692 /* ISwitchControl_x2.png */; };
+		4F77EFEB138BEFFE00073692 /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFAA138BEFFE00073692 /* ISwitchControl_x3.png */; };
+		4F77EFEC138BEFFE00073692 /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9E138BEFFE00073692 /* BG_1024x640.png */; };
+		4F77EFED138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9F138BEFFE00073692 /* IBitmapOverlayControl.png */; };
+		4F77EFEE138BEFFE00073692 /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA0138BEFFE00073692 /* IContactControl_x2.png */; };
+		4F77EFEF138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA1138BEFFE00073692 /* IFaderControl_Horiz.png */; };
+		4F77EFF0138BEFFE00073692 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA2138BEFFE00073692 /* IFaderControl_Vert.png */; };
+		4F77EFF1138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA3138BEFFE00073692 /* IKnobMultiControl_x14.png */; };
+		4F77EFF2138BEFFE00073692 /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA4138BEFFE00073692 /* IKnobRotaterControl.png */; };
+		4F77EFF3138BEFFE00073692 /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA5138BEFFE00073692 /* IKRMC_Base.png */; };
+		4F77EFF4138BEFFE00073692 /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA6138BEFFE00073692 /* IKRMC_Mask.png */; };
+		4F77EFF5138BEFFE00073692 /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA7138BEFFE00073692 /* IKRMC_Top.png */; };
+		4F77EFF6138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA8138BEFFE00073692 /* IRadioButtonsControl_x2.png */; };
+		4F77EFF7138BEFFE00073692 /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA9138BEFFE00073692 /* ISwitchControl_x2.png */; };
+		4F77EFF8138BEFFE00073692 /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFAA138BEFFE00073692 /* ISwitchControl_x3.png */; };
+		4F77EFF9138BEFFE00073692 /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9E138BEFFE00073692 /* BG_1024x640.png */; };
+		4F77EFFA138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9F138BEFFE00073692 /* IBitmapOverlayControl.png */; };
+		4F77EFFB138BEFFE00073692 /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA0138BEFFE00073692 /* IContactControl_x2.png */; };
+		4F77EFFC138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA1138BEFFE00073692 /* IFaderControl_Horiz.png */; };
+		4F77EFFD138BEFFE00073692 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA2138BEFFE00073692 /* IFaderControl_Vert.png */; };
+		4F77EFFE138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA3138BEFFE00073692 /* IKnobMultiControl_x14.png */; };
+		4F77EFFF138BEFFE00073692 /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA4138BEFFE00073692 /* IKnobRotaterControl.png */; };
+		4F77F000138BEFFE00073692 /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA5138BEFFE00073692 /* IKRMC_Base.png */; };
+		4F77F001138BEFFE00073692 /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA6138BEFFE00073692 /* IKRMC_Mask.png */; };
+		4F77F002138BEFFE00073692 /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA7138BEFFE00073692 /* IKRMC_Top.png */; };
+		4F77F003138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA8138BEFFE00073692 /* IRadioButtonsControl_x2.png */; };
+		4F77F004138BEFFE00073692 /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA9138BEFFE00073692 /* ISwitchControl_x2.png */; };
+		4F77F005138BEFFE00073692 /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFAA138BEFFE00073692 /* ISwitchControl_x3.png */; };
+		4F77F006138BEFFE00073692 /* BG_1024x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9E138BEFFE00073692 /* BG_1024x640.png */; };
+		4F77F007138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EF9F138BEFFE00073692 /* IBitmapOverlayControl.png */; };
+		4F77F008138BEFFE00073692 /* IContactControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA0138BEFFE00073692 /* IContactControl_x2.png */; };
+		4F77F009138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA1138BEFFE00073692 /* IFaderControl_Horiz.png */; };
+		4F77F00A138BEFFE00073692 /* IFaderControl_Vert.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA2138BEFFE00073692 /* IFaderControl_Vert.png */; };
+		4F77F00B138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA3138BEFFE00073692 /* IKnobMultiControl_x14.png */; };
+		4F77F00C138BEFFE00073692 /* IKnobRotaterControl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA4138BEFFE00073692 /* IKnobRotaterControl.png */; };
+		4F77F00D138BEFFE00073692 /* IKRMC_Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA5138BEFFE00073692 /* IKRMC_Base.png */; };
+		4F77F00E138BEFFE00073692 /* IKRMC_Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA6138BEFFE00073692 /* IKRMC_Mask.png */; };
+		4F77F00F138BEFFE00073692 /* IKRMC_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA7138BEFFE00073692 /* IKRMC_Top.png */; };
+		4F77F010138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA8138BEFFE00073692 /* IRadioButtonsControl_x2.png */; };
+		4F77F011138BEFFE00073692 /* ISwitchControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFA9138BEFFE00073692 /* ISwitchControl_x2.png */; };
+		4F77F012138BEFFE00073692 /* ISwitchControl_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F77EFAA138BEFFE00073692 /* ISwitchControl_x3.png */; };
 		4FB2E8E212BBAEA500BCC4DD /* IPlugVST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2E7DF12BBAEA500BCC4DD /* IPlugVST.cpp */; };
 		4FB2E8E312BBAEA500BCC4DD /* IPlugBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2E7E112BBAEA500BCC4DD /* IPlugBase.cpp */; };
 		4FB2E8E412BBAEA500BCC4DD /* Hosts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2E7E212BBAEA500BCC4DD /* Hosts.cpp */; };
@@ -810,19 +810,19 @@
 		4F3D43BA1347811600AD872F /* IPlugControls.vst */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPlugControls.vst; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3D4436134782B400AD872F /* IPlugControls.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPlugControls.component; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F55734412C7F49C003A4AD1 /* IPlugControls.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPlugControls.component; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FA4096A138A7329007A02FB /* BG_1024x640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG_1024x640.png; sourceTree = "<group>"; };
-		4FA4096B138A7329007A02FB /* IBitmapOverlayControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IBitmapOverlayControl.png; sourceTree = "<group>"; };
-		4FA4096C138A7329007A02FB /* IContactControl_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IContactControl_x2.png; sourceTree = "<group>"; };
-		4FA4096D138A7329007A02FB /* IFaderControl_Horiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IFaderControl_Horiz.png; sourceTree = "<group>"; };
-		4FA4096E138A7329007A02FB /* IFaderControl_Vert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IFaderControl_Vert.png; sourceTree = "<group>"; };
-		4FA4096F138A7329007A02FB /* IKnobMultiControl_x14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IKnobMultiControl_x14.png; sourceTree = "<group>"; };
-		4FA40970138A7329007A02FB /* IKnobRotaterControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IKnobRotaterControl.png; sourceTree = "<group>"; };
-		4FA40971138A7329007A02FB /* IKRMC_Base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IKRMC_Base.png; sourceTree = "<group>"; };
-		4FA40972138A7329007A02FB /* IKRMC_Mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IKRMC_Mask.png; sourceTree = "<group>"; };
-		4FA40973138A7329007A02FB /* IKRMC_Top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IKRMC_Top.png; sourceTree = "<group>"; };
-		4FA40974138A7329007A02FB /* IRadioButtonsControl_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IRadioButtonsControl_x2.png; sourceTree = "<group>"; };
-		4FA40975138A7329007A02FB /* ISwitchControl_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISwitchControl_x2.png; sourceTree = "<group>"; };
-		4FA40976138A7329007A02FB /* ISwitchControl_x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISwitchControl_x3.png; sourceTree = "<group>"; };
+		4F77EF9E138BEFFE00073692 /* BG_1024x640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG_1024x640.png; sourceTree = "<group>"; };
+		4F77EF9F138BEFFE00073692 /* IBitmapOverlayControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IBitmapOverlayControl.png; sourceTree = "<group>"; };
+		4F77EFA0138BEFFE00073692 /* IContactControl_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IContactControl_x2.png; sourceTree = "<group>"; };
+		4F77EFA1138BEFFE00073692 /* IFaderControl_Horiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IFaderControl_Horiz.png; sourceTree = "<group>"; };
+		4F77EFA2138BEFFE00073692 /* IFaderControl_Vert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IFaderControl_Vert.png; sourceTree = "<group>"; };
+		4F77EFA3138BEFFE00073692 /* IKnobMultiControl_x14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IKnobMultiControl_x14.png; sourceTree = "<group>"; };
+		4F77EFA4138BEFFE00073692 /* IKnobRotaterControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IKnobRotaterControl.png; sourceTree = "<group>"; };
+		4F77EFA5138BEFFE00073692 /* IKRMC_Base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IKRMC_Base.png; sourceTree = "<group>"; };
+		4F77EFA6138BEFFE00073692 /* IKRMC_Mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IKRMC_Mask.png; sourceTree = "<group>"; };
+		4F77EFA7138BEFFE00073692 /* IKRMC_Top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IKRMC_Top.png; sourceTree = "<group>"; };
+		4F77EFA8138BEFFE00073692 /* IRadioButtonsControl_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IRadioButtonsControl_x2.png; sourceTree = "<group>"; };
+		4F77EFA9138BEFFE00073692 /* ISwitchControl_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISwitchControl_x2.png; sourceTree = "<group>"; };
+		4F77EFAA138BEFFE00073692 /* ISwitchControl_x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISwitchControl_x3.png; sourceTree = "<group>"; };
 		4FB2E7D712BBAEA500BCC4DD /* aeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffect.h; sourceTree = "<group>"; };
 		4FB2E7D812BBAEA500BCC4DD /* aeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffectx.h; sourceTree = "<group>"; };
 		4FB2E7DA12BBAEA500BCC4DD /* IPlug_include_in_plug_src.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPlug_include_in_plug_src.h; path = ../../WDL/IPlug/IPlug_include_in_plug_src.h; sourceTree = SOURCE_ROOT; };
@@ -997,7 +997,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4FA40969138A7329007A02FB /* img */,
+				4F77EF9D138BEFFE00073692 /* img */,
 				8D5B49B7048680CD000E48DA /* IPlugControlsVST-Info.plist */,
 				52E41BB30D14C0F500A0943B /* IPlugControlsAU-Info.plist */,
 			);
@@ -1140,26 +1140,25 @@
 			name = SWELL;
 			sourceTree = "<group>";
 		};
-		4FA40969138A7329007A02FB /* img */ = {
+		4F77EF9D138BEFFE00073692 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				4FA4096A138A7329007A02FB /* BG_1024x640.png */,
-				4FA4096B138A7329007A02FB /* IBitmapOverlayControl.png */,
-				4FA4096C138A7329007A02FB /* IContactControl_x2.png */,
-				4FA4096D138A7329007A02FB /* IFaderControl_Horiz.png */,
-				4FA4096E138A7329007A02FB /* IFaderControl_Vert.png */,
-				4FA4096F138A7329007A02FB /* IKnobMultiControl_x14.png */,
-				4FA40970138A7329007A02FB /* IKnobRotaterControl.png */,
-				4FA40971138A7329007A02FB /* IKRMC_Base.png */,
-				4FA40972138A7329007A02FB /* IKRMC_Mask.png */,
-				4FA40973138A7329007A02FB /* IKRMC_Top.png */,
-				4FA40974138A7329007A02FB /* IRadioButtonsControl_x2.png */,
-				4FA40975138A7329007A02FB /* ISwitchControl_x2.png */,
-				4FA40976138A7329007A02FB /* ISwitchControl_x3.png */,
+				4F77EF9E138BEFFE00073692 /* BG_1024x640.png */,
+				4F77EF9F138BEFFE00073692 /* IBitmapOverlayControl.png */,
+				4F77EFA0138BEFFE00073692 /* IContactControl_x2.png */,
+				4F77EFA1138BEFFE00073692 /* IFaderControl_Horiz.png */,
+				4F77EFA2138BEFFE00073692 /* IFaderControl_Vert.png */,
+				4F77EFA3138BEFFE00073692 /* IKnobMultiControl_x14.png */,
+				4F77EFA4138BEFFE00073692 /* IKnobRotaterControl.png */,
+				4F77EFA5138BEFFE00073692 /* IKRMC_Base.png */,
+				4F77EFA6138BEFFE00073692 /* IKRMC_Mask.png */,
+				4F77EFA7138BEFFE00073692 /* IKRMC_Top.png */,
+				4F77EFA8138BEFFE00073692 /* IRadioButtonsControl_x2.png */,
+				4F77EFA9138BEFFE00073692 /* ISwitchControl_x2.png */,
+				4F77EFAA138BEFFE00073692 /* ISwitchControl_x3.png */,
 			);
-			name = img;
-			path = "../../../../Downloads/IControl Example/img";
-			sourceTree = SOURCE_ROOT;
+			path = img;
+			sourceTree = "<group>";
 		};
 		4FB2E75012BBAE8F00BCC4DD /* IPlug */ = {
 			isa = PBXGroup;
@@ -1627,19 +1626,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA4099E138A7329007A02FB /* BG_1024x640.png in Resources */,
-				4FA4099F138A7329007A02FB /* IBitmapOverlayControl.png in Resources */,
-				4FA409A0138A7329007A02FB /* IContactControl_x2.png in Resources */,
-				4FA409A1138A7329007A02FB /* IFaderControl_Horiz.png in Resources */,
-				4FA409A2138A7329007A02FB /* IFaderControl_Vert.png in Resources */,
-				4FA409A3138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */,
-				4FA409A4138A7329007A02FB /* IKnobRotaterControl.png in Resources */,
-				4FA409A5138A7329007A02FB /* IKRMC_Base.png in Resources */,
-				4FA409A6138A7329007A02FB /* IKRMC_Mask.png in Resources */,
-				4FA409A7138A7329007A02FB /* IKRMC_Top.png in Resources */,
-				4FA409A8138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */,
-				4FA409A9138A7329007A02FB /* ISwitchControl_x2.png in Resources */,
-				4FA409AA138A7329007A02FB /* ISwitchControl_x3.png in Resources */,
+				4F77EFD2138BEFFE00073692 /* BG_1024x640.png in Resources */,
+				4F77EFD3138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */,
+				4F77EFD4138BEFFE00073692 /* IContactControl_x2.png in Resources */,
+				4F77EFD5138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */,
+				4F77EFD6138BEFFE00073692 /* IFaderControl_Vert.png in Resources */,
+				4F77EFD7138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */,
+				4F77EFD8138BEFFE00073692 /* IKnobRotaterControl.png in Resources */,
+				4F77EFD9138BEFFE00073692 /* IKRMC_Base.png in Resources */,
+				4F77EFDA138BEFFE00073692 /* IKRMC_Mask.png in Resources */,
+				4F77EFDB138BEFFE00073692 /* IKRMC_Top.png in Resources */,
+				4F77EFDC138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */,
+				4F77EFDD138BEFFE00073692 /* ISwitchControl_x2.png in Resources */,
+				4F77EFDE138BEFFE00073692 /* ISwitchControl_x3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1647,19 +1646,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA40984138A7329007A02FB /* BG_1024x640.png in Resources */,
-				4FA40985138A7329007A02FB /* IBitmapOverlayControl.png in Resources */,
-				4FA40986138A7329007A02FB /* IContactControl_x2.png in Resources */,
-				4FA40987138A7329007A02FB /* IFaderControl_Horiz.png in Resources */,
-				4FA40988138A7329007A02FB /* IFaderControl_Vert.png in Resources */,
-				4FA40989138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */,
-				4FA4098A138A7329007A02FB /* IKnobRotaterControl.png in Resources */,
-				4FA4098B138A7329007A02FB /* IKRMC_Base.png in Resources */,
-				4FA4098C138A7329007A02FB /* IKRMC_Mask.png in Resources */,
-				4FA4098D138A7329007A02FB /* IKRMC_Top.png in Resources */,
-				4FA4098E138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */,
-				4FA4098F138A7329007A02FB /* ISwitchControl_x2.png in Resources */,
-				4FA40990138A7329007A02FB /* ISwitchControl_x3.png in Resources */,
+				4F77EFB8138BEFFE00073692 /* BG_1024x640.png in Resources */,
+				4F77EFB9138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */,
+				4F77EFBA138BEFFE00073692 /* IContactControl_x2.png in Resources */,
+				4F77EFBB138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */,
+				4F77EFBC138BEFFE00073692 /* IFaderControl_Vert.png in Resources */,
+				4F77EFBD138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */,
+				4F77EFBE138BEFFE00073692 /* IKnobRotaterControl.png in Resources */,
+				4F77EFBF138BEFFE00073692 /* IKRMC_Base.png in Resources */,
+				4F77EFC0138BEFFE00073692 /* IKRMC_Mask.png in Resources */,
+				4F77EFC1138BEFFE00073692 /* IKRMC_Top.png in Resources */,
+				4F77EFC2138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */,
+				4F77EFC3138BEFFE00073692 /* ISwitchControl_x2.png in Resources */,
+				4F77EFC4138BEFFE00073692 /* ISwitchControl_x3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1667,19 +1666,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA409D2138A7329007A02FB /* BG_1024x640.png in Resources */,
-				4FA409D3138A7329007A02FB /* IBitmapOverlayControl.png in Resources */,
-				4FA409D4138A7329007A02FB /* IContactControl_x2.png in Resources */,
-				4FA409D5138A7329007A02FB /* IFaderControl_Horiz.png in Resources */,
-				4FA409D6138A7329007A02FB /* IFaderControl_Vert.png in Resources */,
-				4FA409D7138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */,
-				4FA409D8138A7329007A02FB /* IKnobRotaterControl.png in Resources */,
-				4FA409D9138A7329007A02FB /* IKRMC_Base.png in Resources */,
-				4FA409DA138A7329007A02FB /* IKRMC_Mask.png in Resources */,
-				4FA409DB138A7329007A02FB /* IKRMC_Top.png in Resources */,
-				4FA409DC138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */,
-				4FA409DD138A7329007A02FB /* ISwitchControl_x2.png in Resources */,
-				4FA409DE138A7329007A02FB /* ISwitchControl_x3.png in Resources */,
+				4F77F006138BEFFE00073692 /* BG_1024x640.png in Resources */,
+				4F77F007138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */,
+				4F77F008138BEFFE00073692 /* IContactControl_x2.png in Resources */,
+				4F77F009138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */,
+				4F77F00A138BEFFE00073692 /* IFaderControl_Vert.png in Resources */,
+				4F77F00B138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */,
+				4F77F00C138BEFFE00073692 /* IKnobRotaterControl.png in Resources */,
+				4F77F00D138BEFFE00073692 /* IKRMC_Base.png in Resources */,
+				4F77F00E138BEFFE00073692 /* IKRMC_Mask.png in Resources */,
+				4F77F00F138BEFFE00073692 /* IKRMC_Top.png in Resources */,
+				4F77F010138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */,
+				4F77F011138BEFFE00073692 /* ISwitchControl_x2.png in Resources */,
+				4F77F012138BEFFE00073692 /* ISwitchControl_x3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1687,19 +1686,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA409C5138A7329007A02FB /* BG_1024x640.png in Resources */,
-				4FA409C6138A7329007A02FB /* IBitmapOverlayControl.png in Resources */,
-				4FA409C7138A7329007A02FB /* IContactControl_x2.png in Resources */,
-				4FA409C8138A7329007A02FB /* IFaderControl_Horiz.png in Resources */,
-				4FA409C9138A7329007A02FB /* IFaderControl_Vert.png in Resources */,
-				4FA409CA138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */,
-				4FA409CB138A7329007A02FB /* IKnobRotaterControl.png in Resources */,
-				4FA409CC138A7329007A02FB /* IKRMC_Base.png in Resources */,
-				4FA409CD138A7329007A02FB /* IKRMC_Mask.png in Resources */,
-				4FA409CE138A7329007A02FB /* IKRMC_Top.png in Resources */,
-				4FA409CF138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */,
-				4FA409D0138A7329007A02FB /* ISwitchControl_x2.png in Resources */,
-				4FA409D1138A7329007A02FB /* ISwitchControl_x3.png in Resources */,
+				4F77EFF9138BEFFE00073692 /* BG_1024x640.png in Resources */,
+				4F77EFFA138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */,
+				4F77EFFB138BEFFE00073692 /* IContactControl_x2.png in Resources */,
+				4F77EFFC138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */,
+				4F77EFFD138BEFFE00073692 /* IFaderControl_Vert.png in Resources */,
+				4F77EFFE138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */,
+				4F77EFFF138BEFFE00073692 /* IKnobRotaterControl.png in Resources */,
+				4F77F000138BEFFE00073692 /* IKRMC_Base.png in Resources */,
+				4F77F001138BEFFE00073692 /* IKRMC_Mask.png in Resources */,
+				4F77F002138BEFFE00073692 /* IKRMC_Top.png in Resources */,
+				4F77F003138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */,
+				4F77F004138BEFFE00073692 /* ISwitchControl_x2.png in Resources */,
+				4F77F005138BEFFE00073692 /* ISwitchControl_x3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1707,19 +1706,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA40991138A7329007A02FB /* BG_1024x640.png in Resources */,
-				4FA40992138A7329007A02FB /* IBitmapOverlayControl.png in Resources */,
-				4FA40993138A7329007A02FB /* IContactControl_x2.png in Resources */,
-				4FA40994138A7329007A02FB /* IFaderControl_Horiz.png in Resources */,
-				4FA40995138A7329007A02FB /* IFaderControl_Vert.png in Resources */,
-				4FA40996138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */,
-				4FA40997138A7329007A02FB /* IKnobRotaterControl.png in Resources */,
-				4FA40998138A7329007A02FB /* IKRMC_Base.png in Resources */,
-				4FA40999138A7329007A02FB /* IKRMC_Mask.png in Resources */,
-				4FA4099A138A7329007A02FB /* IKRMC_Top.png in Resources */,
-				4FA4099B138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */,
-				4FA4099C138A7329007A02FB /* ISwitchControl_x2.png in Resources */,
-				4FA4099D138A7329007A02FB /* ISwitchControl_x3.png in Resources */,
+				4F77EFC5138BEFFE00073692 /* BG_1024x640.png in Resources */,
+				4F77EFC6138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */,
+				4F77EFC7138BEFFE00073692 /* IContactControl_x2.png in Resources */,
+				4F77EFC8138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */,
+				4F77EFC9138BEFFE00073692 /* IFaderControl_Vert.png in Resources */,
+				4F77EFCA138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */,
+				4F77EFCB138BEFFE00073692 /* IKnobRotaterControl.png in Resources */,
+				4F77EFCC138BEFFE00073692 /* IKRMC_Base.png in Resources */,
+				4F77EFCD138BEFFE00073692 /* IKRMC_Mask.png in Resources */,
+				4F77EFCE138BEFFE00073692 /* IKRMC_Top.png in Resources */,
+				4F77EFCF138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */,
+				4F77EFD0138BEFFE00073692 /* ISwitchControl_x2.png in Resources */,
+				4F77EFD1138BEFFE00073692 /* ISwitchControl_x3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1727,19 +1726,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA409AB138A7329007A02FB /* BG_1024x640.png in Resources */,
-				4FA409AC138A7329007A02FB /* IBitmapOverlayControl.png in Resources */,
-				4FA409AD138A7329007A02FB /* IContactControl_x2.png in Resources */,
-				4FA409AE138A7329007A02FB /* IFaderControl_Horiz.png in Resources */,
-				4FA409AF138A7329007A02FB /* IFaderControl_Vert.png in Resources */,
-				4FA409B0138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */,
-				4FA409B1138A7329007A02FB /* IKnobRotaterControl.png in Resources */,
-				4FA409B2138A7329007A02FB /* IKRMC_Base.png in Resources */,
-				4FA409B3138A7329007A02FB /* IKRMC_Mask.png in Resources */,
-				4FA409B4138A7329007A02FB /* IKRMC_Top.png in Resources */,
-				4FA409B5138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */,
-				4FA409B6138A7329007A02FB /* ISwitchControl_x2.png in Resources */,
-				4FA409B7138A7329007A02FB /* ISwitchControl_x3.png in Resources */,
+				4F77EFDF138BEFFE00073692 /* BG_1024x640.png in Resources */,
+				4F77EFE0138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */,
+				4F77EFE1138BEFFE00073692 /* IContactControl_x2.png in Resources */,
+				4F77EFE2138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */,
+				4F77EFE3138BEFFE00073692 /* IFaderControl_Vert.png in Resources */,
+				4F77EFE4138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */,
+				4F77EFE5138BEFFE00073692 /* IKnobRotaterControl.png in Resources */,
+				4F77EFE6138BEFFE00073692 /* IKRMC_Base.png in Resources */,
+				4F77EFE7138BEFFE00073692 /* IKRMC_Mask.png in Resources */,
+				4F77EFE8138BEFFE00073692 /* IKRMC_Top.png in Resources */,
+				4F77EFE9138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */,
+				4F77EFEA138BEFFE00073692 /* ISwitchControl_x2.png in Resources */,
+				4F77EFEB138BEFFE00073692 /* ISwitchControl_x3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1747,19 +1746,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA409B8138A7329007A02FB /* BG_1024x640.png in Resources */,
-				4FA409B9138A7329007A02FB /* IBitmapOverlayControl.png in Resources */,
-				4FA409BA138A7329007A02FB /* IContactControl_x2.png in Resources */,
-				4FA409BB138A7329007A02FB /* IFaderControl_Horiz.png in Resources */,
-				4FA409BC138A7329007A02FB /* IFaderControl_Vert.png in Resources */,
-				4FA409BD138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */,
-				4FA409BE138A7329007A02FB /* IKnobRotaterControl.png in Resources */,
-				4FA409BF138A7329007A02FB /* IKRMC_Base.png in Resources */,
-				4FA409C0138A7329007A02FB /* IKRMC_Mask.png in Resources */,
-				4FA409C1138A7329007A02FB /* IKRMC_Top.png in Resources */,
-				4FA409C2138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */,
-				4FA409C3138A7329007A02FB /* ISwitchControl_x2.png in Resources */,
-				4FA409C4138A7329007A02FB /* ISwitchControl_x3.png in Resources */,
+				4F77EFEC138BEFFE00073692 /* BG_1024x640.png in Resources */,
+				4F77EFED138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */,
+				4F77EFEE138BEFFE00073692 /* IContactControl_x2.png in Resources */,
+				4F77EFEF138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */,
+				4F77EFF0138BEFFE00073692 /* IFaderControl_Vert.png in Resources */,
+				4F77EFF1138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */,
+				4F77EFF2138BEFFE00073692 /* IKnobRotaterControl.png in Resources */,
+				4F77EFF3138BEFFE00073692 /* IKRMC_Base.png in Resources */,
+				4F77EFF4138BEFFE00073692 /* IKRMC_Mask.png in Resources */,
+				4F77EFF5138BEFFE00073692 /* IKRMC_Top.png in Resources */,
+				4F77EFF6138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */,
+				4F77EFF7138BEFFE00073692 /* ISwitchControl_x2.png in Resources */,
+				4F77EFF8138BEFFE00073692 /* ISwitchControl_x3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1767,19 +1766,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA40977138A7329007A02FB /* BG_1024x640.png in Resources */,
-				4FA40978138A7329007A02FB /* IBitmapOverlayControl.png in Resources */,
-				4FA40979138A7329007A02FB /* IContactControl_x2.png in Resources */,
-				4FA4097A138A7329007A02FB /* IFaderControl_Horiz.png in Resources */,
-				4FA4097B138A7329007A02FB /* IFaderControl_Vert.png in Resources */,
-				4FA4097C138A7329007A02FB /* IKnobMultiControl_x14.png in Resources */,
-				4FA4097D138A7329007A02FB /* IKnobRotaterControl.png in Resources */,
-				4FA4097E138A7329007A02FB /* IKRMC_Base.png in Resources */,
-				4FA4097F138A7329007A02FB /* IKRMC_Mask.png in Resources */,
-				4FA40980138A7329007A02FB /* IKRMC_Top.png in Resources */,
-				4FA40981138A7329007A02FB /* IRadioButtonsControl_x2.png in Resources */,
-				4FA40982138A7329007A02FB /* ISwitchControl_x2.png in Resources */,
-				4FA40983138A7329007A02FB /* ISwitchControl_x3.png in Resources */,
+				4F77EFAB138BEFFE00073692 /* BG_1024x640.png in Resources */,
+				4F77EFAC138BEFFE00073692 /* IBitmapOverlayControl.png in Resources */,
+				4F77EFAD138BEFFE00073692 /* IContactControl_x2.png in Resources */,
+				4F77EFAE138BEFFE00073692 /* IFaderControl_Horiz.png in Resources */,
+				4F77EFAF138BEFFE00073692 /* IFaderControl_Vert.png in Resources */,
+				4F77EFB0138BEFFE00073692 /* IKnobMultiControl_x14.png in Resources */,
+				4F77EFB1138BEFFE00073692 /* IKnobRotaterControl.png in Resources */,
+				4F77EFB2138BEFFE00073692 /* IKRMC_Base.png in Resources */,
+				4F77EFB3138BEFFE00073692 /* IKRMC_Mask.png in Resources */,
+				4F77EFB4138BEFFE00073692 /* IKRMC_Top.png in Resources */,
+				4F77EFB5138BEFFE00073692 /* IRadioButtonsControl_x2.png in Resources */,
+				4F77EFB6138BEFFE00073692 /* ISwitchControl_x2.png in Resources */,
+				4F77EFB7138BEFFE00073692 /* ISwitchControl_x3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

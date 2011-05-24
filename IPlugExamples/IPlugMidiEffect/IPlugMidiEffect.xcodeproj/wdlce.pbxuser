@@ -45,7 +45,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					22,
 					300,
-					1361,
+					1145.58349609375,
 				);
 				PBXFileTableDataSourceColumnsKey = (
 					PBXExecutablesDataSource_ActiveFlagID,
@@ -58,7 +58,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Target_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					1473,
+					1258,
 					20,
 					48,
 					43,
@@ -149,19 +149,18 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 327023360;
-			PBXWorkspaceStateSaveDate = 327023360;
+			PBXPerProjectTemplateStateSaveDate = 327937977;
+			PBXWorkspaceStateSaveDate = 327937977;
 		};
 		perUserProjectItems = {
 			4F12AFE3137DFBA20057F16B /* PBXTextBookmark */ = 4F12AFE3137DFBA20057F16B /* PBXTextBookmark */;
 			4F12AFE4137DFBA20057F16B /* PBXTextBookmark */ = 4F12AFE4137DFBA20057F16B /* PBXTextBookmark */;
-			4F12AFF1137DFBF40057F16B /* PBXTextBookmark */ = 4F12AFF1137DFBF40057F16B /* PBXTextBookmark */;
 			4F12AFF2137DFBF40057F16B /* PBXTextBookmark */ = 4F12AFF2137DFBF40057F16B /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4FE33FF310B4519D00B5FB70 /* Source Control */;
 		userBuildSettings = {
 			OBJROOT = "$(SYMROOT)";
-			SYMROOT = "/Users/oli/Dev/IPlugPlugins/IPlugMidiEffect/build-mac";
+			SYMROOT = "$(PROJECT_DIR)/build-mac";
 		};
 	};
 	4F082B781116E82A0063D30F /* IPlugAU_ViewFactory.mm */ = {
@@ -198,16 +197,6 @@
 		rLoc = 255;
 		rType = 0;
 		vrLen = 754;
-		vrLoc = 0;
-	};
-	4F12AFF1137DFBF40057F16B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52FBBED30D0CF143001C8B8A /* resource.h */;
-		name = "resource.h: 37";
-		rLen = 4;
-		rLoc = 1364;
-		rType = 0;
-		vrLen = 1788;
 		vrLoc = 0;
 	};
 	4F12AFF2137DFBF40057F16B /* PBXTextBookmark */ = {

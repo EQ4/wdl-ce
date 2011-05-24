@@ -58,7 +58,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Target_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					1473,
+					341,
 					20,
 					48,
 					43,
@@ -149,17 +149,13 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 327023893;
-			PBXWorkspaceStateSaveDate = 327023893;
-		};
-		perUserProjectItems = {
-			4F12B0E3137DFE200057F16B /* PBXTextBookmark */ = 4F12B0E3137DFE200057F16B /* PBXTextBookmark */;
-			4F12B0E4137DFE200057F16B /* PBXTextBookmark */ = 4F12B0E4137DFE200057F16B /* PBXTextBookmark */;
+			PBXPerProjectTemplateStateSaveDate = 327937990;
+			PBXWorkspaceStateSaveDate = 327937990;
 		};
 		sourceControlManager = 4FE33FF310B4519D00B5FB70 /* Source Control */;
 		userBuildSettings = {
 			OBJROOT = "$(SYMROOT)";
-			SYMROOT = "/Users/oli/Dev/IPlugPlugins/IPlugInstrument/build-mac";
+			SYMROOT = "$(PROJECT_DIR)/build-mac";
 		};
 	};
 	4F082B781116E82A0063D30F /* IPlugAU_ViewFactory.mm */ = {
@@ -177,26 +173,6 @@
 			sepNavVisRange = "{0, 1431}";
 			sepNavWindowFrame = "{{15, 64}, {1269, 809}}";
 		};
-	};
-	4F12B0E3137DFE200057F16B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52FBBED30D0CF143001C8B8A /* resource.h */;
-		name = "resource.h: 49";
-		rLen = 0;
-		rLoc = 1594;
-		rType = 0;
-		vrLen = 1132;
-		vrLoc = 656;
-	};
-	4F12B0E4137DFE200057F16B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52FBBED30D0CF143001C8B8A /* resource.h */;
-		name = "resource.h: 32";
-		rLen = 0;
-		rLoc = 1137;
-		rType = 0;
-		vrLen = 1197;
-		vrLoc = 591;
 	};
 	4F20EB64132C5C9A0030E34C /* pngrtran.c */ = {
 		uiCtxt = {
