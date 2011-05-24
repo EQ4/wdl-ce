@@ -1,6 +1,9 @@
 #!/usr/bin/python
 
-#this script will rename all the xcode wdlce.pbxuser user settings to yourosxusername.pbxproj to provide the default debugging setup
+# this script will rename all the xcode wdlce.pbxuser
+# user settings to yourosxusername.pbxuser to provide 
+# the default debugging setup, and put build products 
+# in the correct place
 
 import os, getpass, glob, shutil
  
