@@ -7,7 +7,7 @@
 #ifdef _WIN32
   #define LOGFILE "C:\\IPlugLog.txt"
 #else
-  #define LOGFILE "/IPlugLog.txt"
+  #define LOGFILE "IPlugLog.txt"
 #endif
   
 const int TXTLEN = 1024;
@@ -36,7 +36,13 @@ struct LogFile
 
 	LogFile() 
   {
+#ifdef _WIN32
     mFP = fopen(LOGFILE, "w");
+#else
+    char* logFilePath = getenv("HOME");
+    sprintf(logFilePath, "%s/Desktop/%s", logFilePath, LOGFILE);
+    mFP = fopen(logFilePath, "w");
+#endif
     assert(mFP);
   }
   
