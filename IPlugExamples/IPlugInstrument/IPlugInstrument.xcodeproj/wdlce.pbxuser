@@ -45,7 +45,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					22,
 					300,
-					1361,
+					1120.58349609375,
 				);
 				PBXFileTableDataSourceColumnsKey = (
 					PBXExecutablesDataSource_ActiveFlagID,
@@ -132,7 +132,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					1433,
+					301,
 					60,
 					20,
 					48,
@@ -149,8 +149,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 327937990;
-			PBXWorkspaceStateSaveDate = 327937990;
+			PBXPerProjectTemplateStateSaveDate = 331213729;
+			PBXWorkspaceStateSaveDate = 331213729;
+		};
+		perUserProjectItems = {
+			4F0C0E5113BDEB9F0070BD23 /* PBXTextBookmark */ = 4F0C0E5113BDEB9F0070BD23 /* PBXTextBookmark */;
+			4F0C0E5B13BDEBC50070BD23 /* PBXTextBookmark */ = 4F0C0E5B13BDEBC50070BD23 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4FE33FF310B4519D00B5FB70 /* Source Control */;
 		userBuildSettings = {
@@ -173,6 +177,26 @@
 			sepNavVisRange = "{0, 1431}";
 			sepNavWindowFrame = "{{15, 64}, {1269, 809}}";
 		};
+	};
+	4F0C0E5113BDEB9F0070BD23 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FBBED30D0CF143001C8B8A /* resource.h */;
+		name = "resource.h: 35";
+		rLen = 0;
+		rLoc = 1293;
+		rType = 0;
+		vrLen = 1735;
+		vrLoc = 53;
+	};
+	4F0C0E5B13BDEBC50070BD23 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FBBED30D0CF143001C8B8A /* resource.h */;
+		name = "resource.h: 15";
+		rLen = 0;
+		rLoc = 459;
+		rType = 0;
+		vrLen = 1735;
+		vrLoc = 53;
 	};
 	4F20EB64132C5C9A0030E34C /* pngrtran.c */ = {
 		uiCtxt = {
@@ -382,7 +406,7 @@
 			YES,
 		);
 		argumentStrings = (
-			"-v aumu IplI Acme",
+			"-v aumu Ipin Acme",
 		);
 		autoAttachOnCrash = 1;
 		breakpointsEnabled = 1;
@@ -882,9 +906,9 @@
 	};
 	52FBBED30D0CF143001C8B8A /* resource.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1651, 728}}";
-			sepNavSelRange = "{1137, 0}";
-			sepNavVisRange = "{591, 1197}";
+			sepNavIntBoundsRect = "{{0, 0}, {1411, 728}}";
+			sepNavSelRange = "{459, 0}";
+			sepNavVisRange = "{53, 1735}";
 		};
 	};
 	8D5B49AC048680CD000E48DA /* VST_32_intel */ = {

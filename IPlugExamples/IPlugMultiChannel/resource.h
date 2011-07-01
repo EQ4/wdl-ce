@@ -32,11 +32,11 @@
 
 // http://service.steinberg.de/databases/plugin.nsf/plugIn?openForm
 // 4 chars, single quotes. must include one capital letter
-#define PLUG_UNIQUE_ID 'IplA'
+#define PLUG_UNIQUE_ID 'Ipmc'
 // make sure this is not the same as BUNDLE_MFR
 #define PLUG_MFR_ID 'Acme'
 
-#define PLUG_CHANNEL_IO "1-1 2-2"
+#define PLUG_CHANNEL_IO "2-2 4-4"
 
 #define PLUG_LATENCY 0
 #define PLUG_IS_INST 0

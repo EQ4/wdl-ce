@@ -32,7 +32,7 @@
 
 // http://service.steinberg.de/databases/plugin.nsf/plugIn?openForm
 // 4 chars, single quotes. must include one capital letter
-#define PLUG_UNIQUE_ID 'IplA'
+#define PLUG_UNIQUE_ID 'Ipef'
 // make sure this is not the same as BUNDLE_MFR
 #define PLUG_MFR_ID 'Acme'
 

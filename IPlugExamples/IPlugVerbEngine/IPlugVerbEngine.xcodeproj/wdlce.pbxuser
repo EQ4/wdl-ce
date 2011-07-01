@@ -45,7 +45,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					22,
 					300,
-					289.58349609375,
+					290,
 				);
 				PBXFileTableDataSourceColumnsKey = (
 					PBXExecutablesDataSource_ActiveFlagID,
@@ -149,12 +149,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 327937942;
-			PBXWorkspaceStateSaveDate = 327937942;
+			PBXPerProjectTemplateStateSaveDate = 331213834;
+			PBXWorkspaceStateSaveDate = 331213834;
 		};
 		perUserProjectItems = {
-			4F77EEDD138BEFA300073692 /* PBXTextBookmark */ = 4F77EEDD138BEFA300073692 /* PBXTextBookmark */;
-			4FF7A9F7137E0E470005C158 /* PBXTextBookmark */ = 4FF7A9F7137E0E470005C158 /* PBXTextBookmark */;
+			4F0C0EB213BDEC1E0070BD23 /* PBXTextBookmark */ = 4F0C0EB213BDEC1E0070BD23 /* PBXTextBookmark */;
+			4F0C0EB313BDEC1E0070BD23 /* PBXTextBookmark */ = 4F0C0EB313BDEC1E0070BD23 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4FE33FF310B4519D00B5FB70 /* Source Control */;
 		userBuildSettings = {
@@ -177,6 +177,26 @@
 			sepNavVisRange = "{0, 1431}";
 			sepNavWindowFrame = "{{15, 64}, {1269, 809}}";
 		};
+	};
+	4F0C0EB213BDEC1E0070BD23 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FBBED30D0CF143001C8B8A /* resource.h */;
+		name = "resource.h: 8";
+		rLen = 0;
+		rLoc = 167;
+		rType = 0;
+		vrLen = 1510;
+		vrLoc = 0;
+	};
+	4F0C0EB313BDEC1E0070BD23 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FBBED30D0CF143001C8B8A /* resource.h */;
+		name = "resource.h: 14";
+		rLen = 0;
+		rLoc = 435;
+		rType = 0;
+		vrLen = 1510;
+		vrLoc = 0;
 	};
 	4F20EB64132C5C9A0030E34C /* pngrtran.c */ = {
 		uiCtxt = {
@@ -386,7 +406,7 @@
 			YES,
 		);
 		argumentStrings = (
-			"-v aufx IplR Acme",
+			"-v aufx Ipve Acme",
 		);
 		autoAttachOnCrash = 1;
 		breakpointsEnabled = 1;
@@ -438,16 +458,6 @@
 		name = "arch -i386 -ppc";
 		path = /usr/bin/auvaltool;
 		sourceTree = "<absolute>";
-	};
-	4F77EEDD138BEFA300073692 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52FBBED30D0CF143001C8B8A /* resource.h */;
-		name = "resource.h: 8";
-		rLen = 0;
-		rLoc = 167;
-		rType = 0;
-		vrLen = 1511;
-		vrLoc = 0;
 	};
 	4F8F27C7131A78AE007A37CF /* Garageband */ = {
 		isa = PBXExecutable;
@@ -873,16 +883,6 @@
 		path = /Applications/Live/Live.app;
 		sourceTree = "<absolute>";
 	};
-	4FF7A9F7137E0E470005C158 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 52FBBED30D0CF143001C8B8A /* resource.h */;
-		name = "resource.h: 35";
-		rLen = 4;
-		rLoc = 1289;
-		rType = 0;
-		vrLen = 1511;
-		vrLoc = 0;
-	};
 	526F9C010D7DC7D700562CF8 /* IPlugVerbEngine.exp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1651, 635}}";
@@ -906,9 +906,9 @@
 	};
 	52FBBED30D0CF143001C8B8A /* resource.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {698, 715}}";
-			sepNavSelRange = "{167, 0}";
-			sepNavVisRange = "{0, 1511}";
+			sepNavIntBoundsRect = "{{0, 0}, {698, 728}}";
+			sepNavSelRange = "{435, 0}";
+			sepNavVisRange = "{0, 1510}";
 		};
 	};
 	8D5B49AC048680CD000E48DA /* VST_32_intel */ = {
