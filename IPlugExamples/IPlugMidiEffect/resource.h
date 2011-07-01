@@ -1,5 +1,5 @@
 // Double quotes, spaces OK.
-#define PLUG_MFR "Acme"
+#define PLUG_MFR "Manufacturer"
 #define PLUG_NAME "IPlugMidiEffect"
 
 // No quotes or spaces.
@@ -9,7 +9,7 @@
 // - Manually edit the info.plist file to set the CFBundleIdentifier to the either the string 
 // "com.BUNDLE_MFR.audiounit.BUNDLE_NAME" or "com.BUNDLE_MFR.vst.BUNDLE_NAME".
 // Double quotes, no spaces.
-#define BUNDLE_MFR "Acme"
+#define BUNDLE_MFR "Manufacturer"
 #define BUNDLE_NAME "IPlugMidiEffect"
 
 // - Manually create a PLUG_CLASS_NAME.exp file with two entries: _PLUG_ENTRY and _PLUG_VIEW_ENTRY

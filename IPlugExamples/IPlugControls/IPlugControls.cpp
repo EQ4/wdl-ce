@@ -38,7 +38,7 @@ IPlugControls::IPlugControls(IPlugInstanceInfo instanceInfo)
 	GetParam(kICaptionControl)->InitInt("ICaptionControl", 1, 1, 14, "label");
 
 	// Instantiate a graphics engine.
-  /*
+  
 	IGraphics* pGraphics = MakeGraphics(this, kW, kH); // MakeGraphics(this, kW, kH);
 	pGraphics->AttachBackground(BG_ID, BG_FN);
 
@@ -136,7 +136,7 @@ IPlugControls::IPlugControls(IPlugInstanceInfo instanceInfo)
 	AttachGraphics(pGraphics);
 
 	// No cleanup necessary, the graphics engine manages all of its resources and cleans up when closed.
-*/
+
   MakeDefaultPreset((char *) "-", kNumPrograms);
 }
 
@@ -161,7 +161,7 @@ void IPlugControls::ProcessDoubleReplacing(double** inputs, double** outputs, in
 void IPlugControls::OnParamChange(int paramIdx)
 {
 	IMutexLock lock(this);
-/*
+
   if (paramIdx == kIInvisibleSwitchControl)
   {
     if (GetGUI())
@@ -178,7 +178,7 @@ void IPlugControls::OnParamChange(int paramIdx)
     }
     InformHostOfParamChange(kICaptionControl, (GetParam(paramIdx)->Int())/14); //inform host of new normalized value
   }
-  */
+
 }
 
 
