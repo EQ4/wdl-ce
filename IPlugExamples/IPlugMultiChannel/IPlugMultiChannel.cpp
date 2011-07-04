@@ -29,20 +29,17 @@ void IPlugMultiChannel::ProcessDoubleReplacing(double** inputs, double** outputs
 {
   // Mutex is already locked for us.
 
-  double* in1 = inputs[0];
-  double* in2 = inputs[1];
-  double* out1 = outputs[0];
-  double* out2 = outputs[1];
-
-  //double samplesPerBeat = GetSamplesPerBeat();
-  //double samplePos = (double) GetSamplePos();
-  //double tempo = GetTempo();
-
-  for (int s = 0; s < nFrames; ++s, ++in1, ++in2, ++out1, ++out2)
+  // hope ninchan == noutchan
+  for (int c = 0; c < NInChannels(); c++) 
   {
-    *out1 = *in1 * mGain;
-    *out2 = *in2 * mGain;
-  }	
+    double* in = inputs[c];
+    double* out = outputs[c];
+
+    for (int s = 0; s < nFrames; ++s, ++in, ++out)
+    {
+        *out = *in * mGain;
+    }	
+  }
 }
 
 void IPlugMultiChannel::Reset()
