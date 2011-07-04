@@ -9,8 +9,8 @@
 
  A simple IPlug plug-in effect that shows how to use WDL_Resampler
  On load it writes a 441hz sine wave into an array of 44100 double precision samples. 
- If you change the sample rate in the host you still here a 441hz sine wave, 
- The plugin will resample the 44100 sample to the host samplerate.
+ If you change the sample rate in the host you still hear a 441hz sine wave, 
+ The plugin will resample the 44100hz sample to the host samplerate.
 
 */
 
