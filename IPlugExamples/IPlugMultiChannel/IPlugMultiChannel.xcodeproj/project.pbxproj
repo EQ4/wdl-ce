@@ -1331,6 +1331,7 @@
 				4F25BECE12C61F47005D51F7 /* Resources */,
 				4F3AE1D312C0E5E2001FD7A4 /* Frameworks */,
 				4F3AE1DA12C0E5E2001FD7A4 /* Rez */,
+				4FB26D5113C22AA40065BFDE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1368,6 +1369,7 @@
 				4F3D4428134782B400AD872F /* Resources */,
 				4F3D4429134782B400AD872F /* Frameworks */,
 				4F3D4430134782B400AD872F /* Rez */,
+				4FB26D5313C22AB00065BFDE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1387,6 +1389,7 @@
 				4F55733612C7F49C003A4AD1 /* Resources */,
 				4F55733712C7F49C003A4AD1 /* Frameworks */,
 				4F55733E12C7F49C003A4AD1 /* Rez */,
+				4FB26D4A13C22A4C0065BFDE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1424,6 +1427,7 @@
 				4FB67760132D6C3C0020162C /* Resources */,
 				4FB67761132D6C3C0020162C /* Frameworks */,
 				4FB67768132D6C3C0020162C /* Rez */,
+				4FB26D4F13C22A860065BFDE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1576,6 +1580,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FB26D4A13C22A4C0065BFDE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "removes aulab cache";
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"$HOME/Library/Application Support/AU Lab/com.apple.audio.aulab_componentcache.plist\" ]\n  then\n\trm \"$HOME/Library/Application Support/AU Lab/com.apple.audio.aulab_componentcache.plist\"\nfi\n";
+		};
+		4FB26D4F13C22A860065BFDE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"$HOME/Library/Application Support/AU Lab/com.apple.audio.aulab_componentcache.plist\" ]\n  then\n\trm \"$HOME/Library/Application Support/AU Lab/com.apple.audio.aulab_componentcache.plist\"\nfi";
+		};
+		4FB26D5113C22AA40065BFDE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"$HOME/Library/Application Support/AU Lab/com.apple.audio.aulab_componentcache.plist\" ]\n  then\n\trm \"$HOME/Library/Application Support/AU Lab/com.apple.audio.aulab_componentcache.plist\"\nfi";
+		};
+		4FB26D5313C22AB00065BFDE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"$HOME/Library/Application Support/AU Lab/com.apple.audio.aulab_componentcache.plist\" ]\n  then\n\trm \"$HOME/Library/Application Support/AU Lab/com.apple.audio.aulab_componentcache.plist\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F20EECA132C69FE0030E34C /* Sources */ = {
