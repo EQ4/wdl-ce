@@ -39,8 +39,9 @@ struct LogFile
 #ifdef _WIN32
     mFP = fopen(LOGFILE, "w");
 #else
-    char* logFilePath = getenv("HOME");
-    sprintf(logFilePath, "%s/Desktop/%s", logFilePath, LOGFILE);
+    char logFilePath[100];
+    char* home = getenv("HOME");
+    sprintf(logFilePath, "%s/Desktop/%s", home, LOGFILE);
     mFP = fopen(logFilePath, "w");
 #endif
     assert(mFP);
