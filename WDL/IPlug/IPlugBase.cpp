@@ -532,6 +532,7 @@ bool IPlugBase::RestorePreset(int idx)
 
     if (restoredOK) {
       mCurrentPresetIdx = idx;
+      PresetsChangedByHost();
       RedrawParamControls();
     }
   }
