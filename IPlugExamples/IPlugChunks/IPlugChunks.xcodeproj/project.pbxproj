@@ -608,6 +608,10 @@
 		4FB67766132D6C3C0020162C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E41CC40D14C2B000A0943B /* CoreServices.framework */; };
 		4FB67767132D6C3C0020162C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E41CB90D14C2A900A0943B /* CoreAudio.framework */; };
 		4FB67769132D6C3C0020162C /* IPlugAU.r in Rez */ = {isa = PBXBuildFile; fileRef = 4F082B791116E82A0063D30F /* IPlugAU.r */; };
+		4FE916A213C9EE9300BCD287 /* IVecSliders.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE916A113C9EE9300BCD287 /* IVecSliders.h */; };
+		4FE916A313C9EE9300BCD287 /* IVecSliders.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE916A113C9EE9300BCD287 /* IVecSliders.h */; };
+		4FE916A413C9EE9300BCD287 /* IVecSliders.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE916A113C9EE9300BCD287 /* IVecSliders.h */; };
+		4FE916A513C9EE9300BCD287 /* IVecSliders.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE916A113C9EE9300BCD287 /* IVecSliders.h */; };
 		4FF016F7134E14E2001447BA /* mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F4134E14E2001447BA /* mutex.h */; };
 		4FF016F8134E14E2001447BA /* ptrlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F5134E14E2001447BA /* ptrlist.h */; };
 		4FF016F9134E14E2001447BA /* wdlstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F6134E14E2001447BA /* wdlstring.h */; };
@@ -740,6 +744,7 @@
 		4FB676BB132D6BC70020162C /* IPlugChunks.vst */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPlugChunks.vst; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB6776E132D6C3C0020162C /* IPlugChunks.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPlugChunks.component; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCF15AF133124D1009A6277 /* IPlugChunks.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = IPlugChunks.xcconfig; sourceTree = "<group>"; };
+		4FE916A113C9EE9300BCD287 /* IVecSliders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVecSliders.h; sourceTree = "<group>"; };
 		4FF016F4134E14E2001447BA /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mutex.h; path = ../../WDL/mutex.h; sourceTree = SOURCE_ROOT; };
 		4FF016F5134E14E2001447BA /* ptrlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ptrlist.h; path = ../../WDL/ptrlist.h; sourceTree = SOURCE_ROOT; };
 		4FF016F6134E14E2001447BA /* wdlstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wdlstring.h; path = ../../WDL/wdlstring.h; sourceTree = SOURCE_ROOT; };
@@ -856,9 +861,10 @@
 		089C166AFE841209C02AAC07 /* IPlugExample */ = {
 			isa = PBXGroup;
 			children = (
-				52FBBED30D0CF143001C8B8A /* resource.h */,
 				52FBBED20D0CF13D001C8B8A /* IPlugChunks.h */,
 				52FBBED00D0CF139001C8B8A /* IPlugChunks.cpp */,
+				4FE916A113C9EE9300BCD287 /* IVecSliders.h */,
+				52FBBED30D0CF143001C8B8A /* resource.h */,
 				32C88E010371C26100C91783 /* Other Sources */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
@@ -1139,6 +1145,7 @@
 				4FF01705134E1500001447BA /* swell-functions.h in Headers */,
 				4FF01706134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171A134E153A001447BA /* heapbuf.h in Headers */,
+				4FE916A213C9EE9300BCD287 /* IVecSliders.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1192,6 +1199,7 @@
 				4FF0170B134E1500001447BA /* swell-functions.h in Headers */,
 				4FF0170C134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171D134E153A001447BA /* heapbuf.h in Headers */,
+				4FE916A513C9EE9300BCD287 /* IVecSliders.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1245,6 +1253,7 @@
 				4FF01707134E1500001447BA /* swell-functions.h in Headers */,
 				4FF01708134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171B134E153A001447BA /* heapbuf.h in Headers */,
+				4FE916A313C9EE9300BCD287 /* IVecSliders.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1298,6 +1307,7 @@
 				4FF01709134E1500001447BA /* swell-functions.h in Headers */,
 				4FF0170A134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171C134E153A001447BA /* heapbuf.h in Headers */,
+				4FE916A413C9EE9300BCD287 /* IVecSliders.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

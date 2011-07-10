@@ -41,7 +41,7 @@
 #define PLUG_LATENCY 0
 #define PLUG_IS_INST 0
 #define PLUG_DOES_MIDI 0
-#define PLUG_DOES_STATE_CHUNKS 0
+#define PLUG_DOES_STATE_CHUNKS 1
 
 // Unique IDs for each image resource.
 //#define KNOB_ID 101
