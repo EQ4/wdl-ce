@@ -80,6 +80,8 @@ public:
   virtual IBitmap ScaleBitmap(IBitmap* pSrcBitmap, int destW, int destH) = 0;
   virtual IBitmap CropBitmap(IBitmap* pSrcBitmap, IRECT* pR) = 0;
   virtual void AttachBackground(int ID, const char* name);
+  virtual	void AttachPanelBackground(const IColor *pColor);
+
   // Returns the control index of this control (not the number of controls).
 	int AttachControl(IControl* pControl);
 

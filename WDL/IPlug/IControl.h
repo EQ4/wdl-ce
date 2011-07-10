@@ -90,6 +90,23 @@ protected:
   IChannelBlend mBlend;
 };
 
+// Fills a rectangle with a colour
+class IPanelControl : public IControl
+{
+public:
+	IPanelControl(IPlugBase *pPlug, IRECT pR, const IColor* pColor)
+	: IControl(pPlug, pR), mColor(*pColor) {}
+	
+	bool Draw(IGraphics* pGraphics)
+	{
+		pGraphics->FillIRect(&mColor, &mRECT);
+		return true;
+	}
+	
+private:
+	IColor mColor;
+};
+
 enum EDirection { kVertical, kHorizontal };
 
 // Draws a bitmap, or one frame of a stacked bitmap depending on the current value.

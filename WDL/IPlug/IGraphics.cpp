@@ -36,6 +36,12 @@ void IGraphics::AttachBackground(int ID, const char* name)
   mControls.Insert(0, pBG);
 }
 
+void IGraphics::AttachPanelBackground(const IColor *pColor)
+{
+	IControl* pBG = new IPanelControl(mPlug, IRECT(0, 0, mWidth, mHeight), pColor);
+	mControls.Insert(0, pBG);
+}
+
 int IGraphics::AttachControl(IControl* pControl)
 {
 	mControls.Add(pControl);
