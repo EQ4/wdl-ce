@@ -4,8 +4,19 @@
 #include "IPlug_include_in_plug_hdr.h"
 #include "IVecSliders.h"
 
-// IPlugChunks - an example of storing data in chunks
+/*
+ 
+ IPlugChunks - an example of storing data in chunks
+ 
+ A step sequenced volume control
+ 
+ 
+ 
+*/
+
+
 #define NUM_SLIDERS 16
+#define BEAT_DIV 4 // semiquavers
 
 class IPlugChunks : public IPlug
 {
@@ -30,8 +41,6 @@ private:
   double mGain;
 	unsigned long mCount, mPrevCount;
 	
-	double mSampleRate;
-	double mSamplePeriod; // 1/sr
 	MultiSliderControlV *mMSlider;
 };
 

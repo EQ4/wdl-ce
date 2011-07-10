@@ -104,33 +104,36 @@ public:
 		{
 			//mHighlighted = sliderTest;
 			mSteps[sliderTest] = 1. - BOUNDED(yValue, 0., 1.);
+      mSliderThatChanged = sliderTest;
+      mPlug->OnParamChange(mParamIdx);
+
 		}
-		//else mHighlighted = -1;
-    
-    mSliderThatChanged = sliderTest;
-    mPlug->OnParamChange(mParamIdx);
+		else {
+      mSliderThatChanged = -1;
+      //mHighlighted = -1;
+    }
 		
 		SetDirty();	
 	}
   
-  void getLatestChange(double* data)
+  void GetLatestChange(double* data)
 	{
     data[mSliderThatChanged] = mSteps[mSliderThatChanged];
 	}
 	
-	void getState(double* data)
+	void GetState(double* data)
 	{
 		memcpy( data, mSteps, mNumSliders * sizeof(double));
 	}
 	
-	void setState(double* data)
+	void SetState(double* data)
 	{
 		memcpy(mSteps, data, mNumSliders * sizeof(double));
 		
 		SetDirty();	
 	}
 	
-	void setHighlight(int i)
+	void SetHighlight(int i)
 	{
 		mHighlighted = i;
 		
@@ -160,21 +163,21 @@ public:
                   int handleWidth, 
                   const IColor* bgcolor, 
                   const IColor* fgcolor)
-	: IControl(pPlug, pR)
+	: IControl(pPlug, pR, paramIdx)
 	{
 		mBgColor = *bgcolor;
 		mFgColor = *fgcolor;
-		mParamIdx = paramIdx;
 		mHandleWidth = handleWidth;
 	}
 	
 	bool Draw(IGraphics* pGraphics)
 	{
-		float yPos = (mPlug->GetParam(mParamIdx)->GetNormalized() * (mRECT.B-mRECT.T));
-		
-		pGraphics->FillIRect(&mBgColor, &mRECT);		
+    pGraphics->FillIRect(&mBgColor, &mRECT);		
     
-    IRECT innerRect = IRECT(mRECT.L+2, mRECT.T + yPos, mRECT.R-2, mRECT.B);
+    float yPos = mValue * mRECT.H();
+    int top = mRECT.B - yPos;
+    
+    IRECT innerRect = IRECT(mRECT.L+2, top, mRECT.R-2, mRECT.B);
 		pGraphics->FillIRect(&mFgColor, &innerRect);		
 		
 		return true;
@@ -189,12 +192,17 @@ public:
 	{
 		SnapToMouse(x, y);
 	}
-	
+  
 	void SnapToMouse(int x, int y)
 	{
-		float yValue =  (float) (y-mRECT.T) / (float) (mRECT.B - mRECT.T);
-				
-		mPlug->SetParameterFromGUI(mParamIdx, BOUNDED(yValue, 0., 1.));
+    x = BOUNDED(x, mRECT.L, mRECT.R-1);
+		y = BOUNDED(y, mRECT.T, mRECT.B-1);
+    
+    float yValue = 1. - (float) (y-mRECT.T) / (float) mRECT.H();
+		
+		mValue = round( yValue / 0.001 ) * 0.001;
+    
+		mPlug->SetParameterFromGUI(mParamIdx, BOUNDED(mValue, 0., 1.));
 		
 		SetDirty();	
 	}

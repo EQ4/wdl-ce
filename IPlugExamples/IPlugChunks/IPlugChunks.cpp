@@ -23,7 +23,7 @@ enum ELayout
 };
 
 IPlugChunks::IPlugChunks(IPlugInstanceInfo instanceInfo)
-:	IPLUG_CTOR(kNumParams, kNumPrograms, instanceInfo), mGain(1.), mSampleRate(44100.), mSamplePeriod(1./44100.)
+:	IPLUG_CTOR(kNumParams, kNumPrograms, instanceInfo), mGain(1.)
 {
 	TRACE;
   
@@ -40,9 +40,9 @@ IPlugChunks::IPlugChunks(IPlugInstanceInfo instanceInfo)
 	pGraphics->AttachPanelBackground(&COLOR_BLUE);
 	
 	mMSlider = new MultiSliderControlV(this, IRECT(10, 10, 170, 110), kDummyParamForMultislider, NUM_SLIDERS, 10, &COLOR_WHITE, &COLOR_BLACK, &COLOR_RED);
-  
-	pGraphics->AttachControl(mMSlider);
-  
+  pGraphics->AttachControl(mMSlider);
+  pGraphics->AttachControl(new IVSliderControl(this, IRECT(200, 10, 220, 110), kGain, 20, &COLOR_WHITE, &COLOR_GREEN));
+
 	AttachGraphics(pGraphics);
 }
 
@@ -66,11 +66,10 @@ void IPlugChunks::ProcessDoubleReplacing(double** inputs, double** outputs, int 
 	
 	for (int s = 0; s < nFrames; ++s, ++in1, ++in2, ++out1, ++out2) 
 	{
-    int mod = (samplePos + s) % (samplesPerBeat * 4);
+    int mod = (samplePos + s) % (samplesPerBeat * BEAT_DIV);
     
-		count = mod / (samplesPerBeat / 4);
+		count = mod / (samplesPerBeat / BEAT_DIV);
     
-    //printf("%i\n", count);
    if (count >= NUM_SLIDERS) {
      count = 0;
    }
@@ -79,7 +78,7 @@ void IPlugChunks::ProcessDoubleReplacing(double** inputs, double** outputs, int 
 		{
 			if (GetGUI()) 
 			{
-				mMSlider->setHighlight(count);
+				mMSlider->SetHighlight(count);
 			}
 		}
 		
@@ -99,8 +98,6 @@ void IPlugChunks::Reset()
 	TRACE;
 	IMutexLock lock(this);
 	
-	mSampleRate = GetSampleRate();
-	mSamplePeriod = 1./mSampleRate;
 	mCount = 0;
 	mPrevCount = ULONG_MAX;
 }
@@ -113,7 +110,8 @@ void IPlugChunks::OnParamChange(int paramIdx)
 	switch (paramIdx)
 	{
     case kDummyParamForMultislider:
-      mMSlider->getLatestChange(mSteps);
+      //could also get entire array
+      mMSlider->GetLatestChange(mSteps);
       break;
 		case kGain:
 			mGain = GetParam(kGain)->DBToAmp();
@@ -148,7 +146,7 @@ int IPlugChunks::UnserializeState(ByteChunk* pChunk, int startPos)
   
 	if (mMSlider) 
 	{
-		mMSlider->setState(mSteps);
+		mMSlider->SetState(mSteps);
 		mMSlider->SetDirty(false);
 	}
 	
