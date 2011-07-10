@@ -157,12 +157,13 @@ protected:
   // MakePresetFromNamedParams(name, nParamsNamed, paramEnum1, paramVal1, paramEnum2, paramVal2, ..., paramEnumN, paramVal2)
   // nParamsNamed may be less than the total number of params.
   void MakePresetFromNamedParams(char* name, int nParamsNamed, ...);
+  void MakePresetFromChunk(char* name, ByteChunk* pChunk);
 
   bool DoesStateChunks() { return mStateChunks; }
   // Will append if the chunk is already started.
-  bool SerializeParams(ByteChunk* pChunk);
+  virtual bool SerializeParams(ByteChunk* pChunk);
   // Returns the new chunk position (endPos).
-  int UnserializeParams(ByteChunk* pChunk, int startPos);
+  virtual int UnserializeParams(ByteChunk* pChunk, int startPos);
   void RedrawParamControls();  // Called after restoring state.
 
   // ----------------------------------------
@@ -218,12 +219,6 @@ private:
   double mSampleRate;
   int mBlockSize, mLatency;
 
- 	WDL_PtrList<IParam> mParams;
-	IGraphics* mGraphics;
-
-  WDL_PtrList<IPreset> mPresets;
-  int mCurrentPresetIdx;
-
   WDL_TypedBuf<double*> mInData, mOutData;
   struct InChannel {
     bool mConnected;
@@ -239,7 +234,13 @@ private:
   WDL_PtrList<InChannel> mInChannels;
   WDL_PtrList<OutChannel> mOutChannels;
   
+protected:
   WDL_Mutex mMutex;
+  WDL_PtrList<IParam> mParams;
+	IGraphics* mGraphics;
+  
+  WDL_PtrList<IPreset> mPresets;
+  int mCurrentPresetIdx;
 };
 
 #endif
