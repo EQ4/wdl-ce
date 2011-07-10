@@ -29,10 +29,20 @@ public:
   void OnParamChange(int paramIdx);
 
   void ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames);
+
   
   bool SerializeState(ByteChunk* pChunk);
 	int UnserializeState(ByteChunk* pChunk, int startPos);
+  
+  bool SerializeParams(ByteChunk* pChunk);
+  int UnserializeParams(ByteChunk* pChunk, int startPos);
+  
+  //bool SerializePresets(ByteChunk* pChunk);
+  //int UnserializePresets(ByteChunk* pChunk, int startPos);
+  
 	//void MakePresetState(ByteChunk *pChunk,va_list vp);
+  
+  void PresetsChangedByHost();
 
 private:
 
@@ -42,6 +52,8 @@ private:
 	unsigned long mCount, mPrevCount;
 	
 	MultiSliderControlV *mMSlider;
+  
+
 };
 
 #endif

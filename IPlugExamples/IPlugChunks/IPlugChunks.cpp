@@ -5,7 +5,7 @@
 #include <math.h>
 
 // The number of presets/programs
-const int kNumPrograms = 1;
+const int kNumPrograms = 8;
 
 // An enumerated list for all the parameters of the plugin
 enum EParams 
@@ -34,7 +34,7 @@ IPlugChunks::IPlugChunks(IPlugInstanceInfo instanceInfo)
 	GetParam(kGain)->InitDouble("Gain", 0.0, -70.0, 12.0, 0.1, "dB");
 	
 	//MakePreset("preset 1", -5.0, 5.0, 17, kReversed);
-	MakeDefaultPreset("-", kNumPrograms);
+	//MakeDefaultPreset("-", kNumPrograms); // cant call this
 	
 	IGraphics* pGraphics = MakeGraphics(this, kW, kH);
 	pGraphics->AttachPanelBackground(&COLOR_BLUE);
@@ -112,6 +112,7 @@ void IPlugChunks::OnParamChange(int paramIdx)
     case kDummyParamForMultislider:
       //could also get entire array
       mMSlider->GetLatestChange(mSteps);
+      ModifyCurrentPreset();
       break;
 		case kGain:
 			mGain = GetParam(kGain)->DBToAmp();
@@ -122,45 +123,139 @@ void IPlugChunks::OnParamChange(int paramIdx)
 	}
 }
 
+bool IPlugChunks::SerializeParams(ByteChunk* pChunk)
+{
+  TRACE;
+  WDL_MutexLock lock(&mMutex);
+  bool savedOK = true;
+  int i;
+  double v;
+  
+  // added this to serialize the slider state
+  for (i = 0; i< NUM_SLIDERS && savedOK; i++) {
+    v =  mSteps[i];
+    savedOK &= (pChunk->Put(&v) > 0);
+  }
+  
+  int n = mParams.GetSize();
+  for (i = 0; i < n && savedOK; ++i) {
+    IParam* pParam = mParams.Get(i);
+    v = pParam->Value();
+    savedOK &= (pChunk->Put(&v) > 0);
+  }
+  return savedOK;
+}
+
+int IPlugChunks::UnserializeParams(ByteChunk* pChunk, int startPos)
+{
+  TRACE;
+  WDL_MutexLock lock(&mMutex);
+  int i, n = mParams.GetSize(), pos = startPos;
+  double v = 0.0;
+  
+  // added this to unserialize the slider state
+  for (i = 0; i< NUM_SLIDERS; i++) {
+    v = 0.0;
+    pos = pChunk->Get(&v, pos);
+    mSteps[i] = v;
+  }
+  
+  for (i = 0; i < n && pos >= 0; ++i) {
+    IParam* pParam = mParams.Get(i);
+    double v = 0.0;
+    Trace(TRACELOC, "%d %s", i, pParam->GetNameForHost());
+    pos = pChunk->Get(&v, pos);
+    pParam->Set(v);
+  }
+  
+  OnParamReset();
+  return pos;
+}
+
 bool IPlugChunks::SerializeState(ByteChunk* pChunk)
 {
+  TRACE;
 	IMutexLock lock(this);
 	
-	if ( mMSlider == NULL ) 
-	{
-		return false;
-	}
-	else 
-	{
-		pChunk->Put(mSteps);
-	}
+  int i;
+  double v;
+  bool savedOK = true;
+  // added this to serialize the slider state
+  for (i = 0; i< NUM_SLIDERS && savedOK; i++) {
+    v =  mSteps[i];
+    savedOK &= (pChunk->Put(&v) > 0);
+  }
   
-	return SerializeParams(pChunk);
+  if (savedOK) {
+    return IPlugBase::SerializeParams(pChunk);
+  }
+  else {
+    return false;
+  }
 }
 
 int IPlugChunks::UnserializeState(ByteChunk* pChunk, int startPos)
 {
+  TRACE;
 	IMutexLock lock(this);
 	
-	startPos = pChunk->Get(mSteps, startPos);
+  // added this to unserialize the slider state
+  for (int i = 0; i< NUM_SLIDERS; i++) {
+    double v = 0.0;
+    startPos = pChunk->Get(&v, startPos);
+    mSteps[i] = v;
+  }
   
-	if (mMSlider) 
-	{
-		mMSlider->SetState(mSteps);
-		mMSlider->SetDirty(false);
-	}
-	
-	return UnserializeParams(pChunk, startPos);
+	return IPlugBase::UnserializeParams(pChunk, startPos);
 }
+
 /*
- void IPlugChunks::MakePresetState(ByteChunk *pChunk, va_list vp) 
- {
- //	handle the first variable arg to MakePreset()
- char *s = (char *) va_arg(vp, char * );
- pChunk->PutStr(s);
- //	now handle all the other args (the parameters)
- MakePresetParams(pChunk,vp);
- }
- */
+bool IPlugChunks::SerializePresets(ByteChunk* pChunk)
+{
+  TRACE;
+  bool savedOK = true;
+  int n = mPresets.GetSize();
+  for (int i = 0; i < n && savedOK; ++i) {
+    IPreset* pPreset = mPresets.Get(i);
+    pChunk->PutStr(pPreset->mName);
+    pChunk->PutBool(pPreset->mInitialized);
+    if (pPreset->mInitialized) {
+      savedOK &= (pChunk->PutChunk(&(pPreset->mChunk)) > 0);
+    }
+  }
+  return savedOK;
+}
 
+int IPlugChunks::UnserializePresets(ByteChunk* pChunk, int startPos)
+{
+  TRACE;
+  WDL_String name;
+  int n = mPresets.GetSize(), pos = startPos;
+  for (int i = 0; i < n && pos >= 0; ++i) {
+    IPreset* pPreset = mPresets.Get(i);
+    pos = pChunk->GetStr(&name, pos);
+    strcpy(pPreset->mName, name.Get());
+    pos = pChunk->GetBool(&(pPreset->mInitialized), pos);
+    if (pPreset->mInitialized) {
+      pos = UnserializeParams(pChunk, pos);
+      if (pos > 0) {
+        pPreset->mChunk.Clear();
+        SerializeParams(&(pPreset->mChunk));
+      }
+    }
+  }
+  RestorePreset(mCurrentPresetIdx);
+  return pos;
+}
+*/
 
+void IPlugChunks::PresetsChangedByHost()
+{
+  IMutexLock lock(this);
+
+  if (mMSlider)
+    mMSlider->SetState(mSteps);
+  
+  if(GetGUI())
+    GetGUI()->SetAllControlsDirty();
+}
