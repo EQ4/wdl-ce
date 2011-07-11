@@ -124,6 +124,10 @@ public:
     
   void EnsureDefaultPreset();
   
+  // Dump the current state as source code for a call to MakePresetFromNamedParams.
+  void DumpPresetSrcCode(const char* filename, const char* paramEnumNames[]);
+//  void DumpPresetBlob(const char* filename);  
+  
 protected:
 
   // ----------------------------------------
@@ -182,9 +186,6 @@ protected:
   // Returns the new chunk position (endPos).
   virtual int UnserializePresets(ByteChunk* pChunk, int startPos);
 	virtual void PresetsChangedByHost() {} // does nothing by default
-
-  // Dump the current state as source code for a call to MakePresetFromNamedParams.
-  void DumpPresetSrcCode(const char* filename, const char* paramEnumNames[]);
 
   // Set connection state for n channels.
   // If a channel is connected, we expect a call to attach the buffers before each process call.

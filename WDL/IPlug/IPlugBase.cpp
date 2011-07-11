@@ -698,3 +698,18 @@ void IPlugBase::DumpPresetSrcCode(const char* filename, const char* paramEnumNam
     fclose(fp);
   } 
 }
+
+//void IPlugBase::DumpPresetBlob(const char* filename)
+//{
+//  FILE* fp = fopen(filename, "w");
+//  fprintf(fp, "  MakePresetFromBlob(\"name\",\"");
+//  
+//  ByteChunk* pPresetChunk = &mPresets.Get(mCurrentPresetIdx)->mChunk;
+//  BYTE* byteStart = pPresetChunk->GetBytes();
+//  for (int i = 0; i< pPresetChunk->Size(); i++) {
+//    fprintf(fp, "%c", *(byteStart + i));
+//  }
+//  
+//  fprintf(fp, ");\n");
+//  fclose(fp);
+//}
