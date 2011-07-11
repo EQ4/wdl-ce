@@ -213,11 +213,13 @@ const char* AppendTimestamp(const char* Mmm_dd_yyyy, const char* hh_mm_ss, const
       static WDL_Mutex sLogMutex;      
       char str[TXTLEN];
       VARARGS_TO_STR(str);
+#ifdef TRACE_TO_STDOUT
       printf("[%d:%s:%d]%s", GetOrdinalThreadID(SYS_THREAD_ID), funcName, line, str);
-     
-      //WDL_MutexLock lock(&sLogMutex);
-      //fprintf(sLogFile.mFP, "[%d:%s:%d]%s", GetOrdinalThreadID(SYS_THREAD_ID), funcName, line, str);
-      //fflush(sLogFile.mFP);
+#else
+      WDL_MutexLock lock(&sLogMutex);
+      fprintf(sLogFile.mFP, "[%d:%s:%d]%s", GetOrdinalThreadID(SYS_THREAD_ID), funcName, line, str);
+      fflush(sLogFile.mFP);
+#endif
     }
   }
 

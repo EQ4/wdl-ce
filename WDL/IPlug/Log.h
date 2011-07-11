@@ -19,6 +19,7 @@
 #endif
 
 //#define TRACE_PROCESS_CALLS  
+//#define TRACE_TO_STDOUT
 
 #define TRACELOC __FUNCTION__,__LINE__
 void Trace(const char* funcName, int line, const char* fmtStr, ...);
