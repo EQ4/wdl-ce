@@ -6,10 +6,9 @@
 
 /*
  
- IPlugChunks - an example of storing data in chunks
+ IPlugChunks - an example of storing data in chunks, and custom IControl classes
  
- A step sequenced volume control
- 
+ A step sequenced volume control / tarnce gate
  
  
 */
@@ -30,7 +29,6 @@ public:
 
   void ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames);
 
-  
   bool SerializeState(ByteChunk* pChunk);
 	int UnserializeState(ByteChunk* pChunk, int startPos);
   
@@ -39,11 +37,9 @@ public:
   
   //bool SerializePresets(ByteChunk* pChunk);
   //int UnserializePresets(ByteChunk* pChunk, int startPos);
-  
-	//void MakePresetState(ByteChunk *pChunk,va_list vp);
-  
+    
   void PresetsChangedByHost();
-
+  
 private:
 
   double mSteps[NUM_SLIDERS];
@@ -52,8 +48,6 @@ private:
 	unsigned long mCount, mPrevCount;
 	
 	MultiSliderControlV *mMSlider;
-  
-
 };
 
 #endif

@@ -22,6 +22,23 @@ enum ELayout
 	kH = 300
 };
 
+class ITempPresetSaveButtonControl : public IPanelControl 
+{
+public:
+  ITempPresetSaveButtonControl(IPlugBase *pPlug, IRECT pR) 
+  : IPanelControl(pPlug, pR, &COLOR_RED) {}
+  
+  void OnMouseDown(int x, int y, IMouseMod* pMod)
+  {
+    char presetFilePath[100];
+    char* home = getenv("HOME");
+    sprintf(presetFilePath, "%s/Desktop/%s", home, "IPlugChunksPreset.txt");
+    
+    mPlug->DumpPresetBlob(presetFilePath);
+  }
+  
+};
+
 IPlugChunks::IPlugChunks(IPlugInstanceInfo instanceInfo)
 :	IPLUG_CTOR(kNumParams, kNumPrograms, instanceInfo), mGain(1.)
 {
@@ -33,9 +50,15 @@ IPlugChunks::IPlugChunks(IPlugInstanceInfo instanceInfo)
 	//arguments are: name, defaultVal, minVal, maxVal, step, label
 	GetParam(kGain)->InitDouble("Gain", 0.0, -70.0, 12.0, 0.1, "dB");
 	
-	//MakePreset("preset 1", -5.0, 5.0, 17, kReversed);
-	//MakeDefaultPreset("-", kNumPrograms); // cant call this
-	
+  MakePresetFromBlob("hellomunkey","AAAAEK5H4T8AAAAghevhPwAAAKBwPeI/AAAAMDMz4z8AAADA9SjkPwAAAFC4HuU/AAAAQOF65D8AAADQzMzkPwAAAFC4HuU/AAAA0KNw5T8AAABgj8LlPwAAAGCPwuU/AAAA4HoU5j8AAABgj8LlPwAAAGBmZuY/AAAAcD0K5z8AAAAAAAAAAA==", 136);
+  MakePresetFromBlob("test", "AAAAAAAA8D8AAAAAAADwPwAAAAAAAPA/AAAAAAAA8D8AAAAAAADwPwAAAAAAAPA/AAAA2KNw7T8AAACQwvXoPwAAACCF6+E/AAAAAK5H0T8AAAAAAADQPwAAAACkcM0/AAAAgEfhyj8AAACAPQrHPwAAAAAzM8M/AAAAAD0Ktz8AAAAAAAAAAA==", 136);
+  MakePresetFromBlob("mondkfjsdjf", "AAAAEK5H4T8AAAAghevhPwAAAKBwPeI/AAAAMDMz4z8AAAAA4HqEPwAAAADgeoQ/AAAAAOB6hD8AAAAA4HqEPwAAAADgeoQ/AAAAAOB6hD8AAABgj8LlPwAAAADgeoQ/AAAAAOB6hD8AAAAAUriuPwAAAADgeoQ/AAAAAOB6hD8AAMwehUtRwA==", 136);
+  MakePresetFromBlob("hello4","AAAAEK5H4T8AAAAghevhPwAAAKBwPeI/AAAAMDMz4z8AAADA9SjkPwAAAFC4HuU/AAAAQOF65D8AAADQzMzkPwAAAFC4HuU/AAAA0KNw5T8AAABgj8LlPwAAAGCPwuU/AAAA4HoU5j8AAABgj8LlPwAAAGBmZuY/AAAAcD0K5z8AAAAAAAAAAA==", 136);
+  MakePresetFromBlob("hello5","AAAAEK5H4T8AAAAghevhPwAAAKBwPeI/AAAAMDMz4z8AAADA9SjkPwAAAFC4HuU/AAAAQOF65D8AAADQzMzkPwAAAFC4HuU/AAAA0KNw5T8AAABgj8LlPwAAAGCPwuU/AAAA4HoU5j8AAABgj8LlPwAAAGBmZuY/AAAAcD0K5z8AAAAAAAAAAA==", 136);
+  MakePresetFromBlob("hello6","AAAAEK5H4T8AAAAghevhPwAAAKBwPeI/AAAAMDMz4z8AAADA9SjkPwAAAFC4HuU/AAAAQOF65D8AAADQzMzkPwAAAFC4HuU/AAAA0KNw5T8AAABgj8LlPwAAAGCPwuU/AAAA4HoU5j8AAABgj8LlPwAAAGBmZuY/AAAAcD0K5z8AAAAAAAAAAA==", 136);
+  MakePresetFromBlob("hello7","AAAAEK5H4T8AAAAghevhPwAAAKBwPeI/AAAAMDMz4z8AAADA9SjkPwAAAFC4HuU/AAAAQOF65D8AAADQzMzkPwAAAFC4HuU/AAAA0KNw5T8AAABgj8LlPwAAAGCPwuU/AAAA4HoU5j8AAABgj8LlPwAAAGBmZuY/AAAAcD0K5z8AAAAAAAAAAA==", 136);
+  MakePresetFromBlob("hello8","AAAAEK5H4T8AAAAghevhPwAAAKBwPeI/AAAAMDMz4z8AAADA9SjkPwAAAFC4HuU/AAAAQOF65D8AAADQzMzkPwAAAFC4HuU/AAAA0KNw5T8AAABgj8LlPwAAAGCPwuU/AAAA4HoU5j8AAABgj8LlPwAAAGBmZuY/AAAAcD0K5z8AAAAAAAAAAA==", 136);
+
 	IGraphics* pGraphics = MakeGraphics(this, kW, kH);
 	pGraphics->AttachPanelBackground(&COLOR_BLUE);
 	
@@ -43,6 +66,8 @@ IPlugChunks::IPlugChunks(IPlugInstanceInfo instanceInfo)
   pGraphics->AttachControl(mMSlider);
   pGraphics->AttachControl(new IVSliderControl(this, IRECT(200, 10, 220, 110), kGain, 20, &COLOR_WHITE, &COLOR_GREEN));
 
+  pGraphics->AttachControl(new ITempPresetSaveButtonControl(this, IRECT(350, 250, 390, 290)));
+  
 	AttachGraphics(pGraphics);
 }
 

@@ -445,6 +445,10 @@
 		4F55733C12C7F49C003A4AD1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E41CC40D14C2B000A0943B /* CoreServices.framework */; };
 		4F55733D12C7F49C003A4AD1 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E41CB90D14C2A900A0943B /* CoreAudio.framework */; };
 		4F55733F12C7F49C003A4AD1 /* IPlugAU.r in Rez */ = {isa = PBXBuildFile; fileRef = 4F082B791116E82A0063D30F /* IPlugAU.r */; };
+		4F787AFA13CB4B6F00CE2011 /* base64encdec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F787AF913CB4B6F00CE2011 /* base64encdec.h */; };
+		4F787AFB13CB4B6F00CE2011 /* base64encdec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F787AF913CB4B6F00CE2011 /* base64encdec.h */; };
+		4F787AFC13CB4B6F00CE2011 /* base64encdec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F787AF913CB4B6F00CE2011 /* base64encdec.h */; };
+		4F787AFD13CB4B6F00CE2011 /* base64encdec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F787AF913CB4B6F00CE2011 /* base64encdec.h */; };
 		4FB2E8E212BBAEA500BCC4DD /* IPlugVST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2E7DF12BBAEA500BCC4DD /* IPlugVST.cpp */; };
 		4FB2E8E312BBAEA500BCC4DD /* IPlugBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2E7E112BBAEA500BCC4DD /* IPlugBase.cpp */; };
 		4FB2E8E412BBAEA500BCC4DD /* Hosts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2E7E212BBAEA500BCC4DD /* Hosts.cpp */; };
@@ -710,6 +714,7 @@
 		4F3D43BA1347811600AD872F /* IPlugChunks.vst */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPlugChunks.vst; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3D4436134782B400AD872F /* IPlugChunks.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPlugChunks.component; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F55734412C7F49C003A4AD1 /* IPlugChunks.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPlugChunks.component; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F787AF913CB4B6F00CE2011 /* base64encdec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64encdec.h; path = ../../WDL/base64encdec.h; sourceTree = SOURCE_ROOT; };
 		4FB2E7D712BBAEA500BCC4DD /* aeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffect.h; sourceTree = "<group>"; };
 		4FB2E7D812BBAEA500BCC4DD /* aeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffectx.h; sourceTree = "<group>"; };
 		4FB2E7DA12BBAEA500BCC4DD /* IPlug_include_in_plug_src.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPlug_include_in_plug_src.h; path = ../../WDL/IPlug/IPlug_include_in_plug_src.h; sourceTree = SOURCE_ROOT; };
@@ -1082,6 +1087,7 @@
 		4FF01613134E0BCD001447BA /* WDL */ = {
 			isa = PBXGroup;
 			children = (
+				4F787AF913CB4B6F00CE2011 /* base64encdec.h */,
 				4FF01719134E153A001447BA /* heapbuf.h */,
 				4FF016F4134E14E2001447BA /* mutex.h */,
 				4FF016F5134E14E2001447BA /* ptrlist.h */,
@@ -1146,6 +1152,7 @@
 				4FF01706134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171A134E153A001447BA /* heapbuf.h in Headers */,
 				4FE916A213C9EE9300BCD287 /* IVecSliders.h in Headers */,
+				4F787AFA13CB4B6F00CE2011 /* base64encdec.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1200,6 +1207,7 @@
 				4FF0170C134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171D134E153A001447BA /* heapbuf.h in Headers */,
 				4FE916A513C9EE9300BCD287 /* IVecSliders.h in Headers */,
+				4F787AFD13CB4B6F00CE2011 /* base64encdec.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1254,6 +1262,7 @@
 				4FF01708134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171B134E153A001447BA /* heapbuf.h in Headers */,
 				4FE916A313C9EE9300BCD287 /* IVecSliders.h in Headers */,
+				4F787AFB13CB4B6F00CE2011 /* base64encdec.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1308,6 +1317,7 @@
 				4FF0170A134E1500001447BA /* swell-types.h in Headers */,
 				4FF0171C134E153A001447BA /* heapbuf.h in Headers */,
 				4FE916A413C9EE9300BCD287 /* IVecSliders.h in Headers */,
+				4F787AFC13CB4B6F00CE2011 /* base64encdec.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
