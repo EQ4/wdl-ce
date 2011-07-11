@@ -4,6 +4,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <time.h>
+#include "../base64encdec.h"
 
 const double DEFAULT_SAMPLE_RATE = 44100.0;
 
@@ -489,6 +490,15 @@ void IPlugBase::MakePresetFromChunk(char* name, ByteChunk* pChunk)
   }
 }
 
+void IPlugBase::MakePresetFromBlob(char* name, const char* blob, int sizeOfChunk)
+{
+  ByteChunk presetChunk;
+  presetChunk.Resize(sizeOfChunk);
+  base64decode(blob, presetChunk.GetBytes(), sizeOfChunk);
+
+  MakePresetFromChunk(name, &presetChunk);
+}
+
 #define DEFAULT_USER_PRESET_NAME "user preset"
 
 void MakeDefaultUserPresetName(WDL_PtrList<IPreset>* pPresets, char* str)
@@ -673,7 +683,7 @@ void IPlugBase::DumpPresetSrcCode(const char* filename, const char* paramEnumNam
     sDumped = true;
     int i, n = NParams();
     FILE* fp = fopen(filename, "w");
-    fprintf(fp, "  MakePresetFromNamedParams(\"name\", %d", n - 1);
+    fprintf(fp, "MakePresetFromNamedParams(\"name\", %d", n - 1);
     for (i = 0; i < n - 1; ++i) {
       IParam* pParam = GetParam(i);
       char paramVal[32];
@@ -699,17 +709,22 @@ void IPlugBase::DumpPresetSrcCode(const char* filename, const char* paramEnumNam
   } 
 }
 
-//void IPlugBase::DumpPresetBlob(const char* filename)
-//{
-//  FILE* fp = fopen(filename, "w");
-//  fprintf(fp, "  MakePresetFromBlob(\"name\",\"");
-//  
-//  ByteChunk* pPresetChunk = &mPresets.Get(mCurrentPresetIdx)->mChunk;
-//  BYTE* byteStart = pPresetChunk->GetBytes();
-//  for (int i = 0; i< pPresetChunk->Size(); i++) {
-//    fprintf(fp, "%c", *(byteStart + i));
-//  }
-//  
-//  fprintf(fp, ");\n");
-//  fclose(fp);
-//}
+#ifndef MAX_BLOB_LENGTH
+  #define MAX_BLOB_LENGTH 1024
+#endif
+
+void IPlugBase::DumpPresetBlob(const char* filename)
+{
+  FILE* fp = fopen(filename, "w");
+  fprintf(fp, "MakePresetFromBlob(\"name\", \"");
+
+  char buf[MAX_BLOB_LENGTH];
+  
+  ByteChunk* pPresetChunk = &mPresets.Get(mCurrentPresetIdx)->mChunk;
+  BYTE* byteStart = pPresetChunk->GetBytes();
+  
+  base64encode(byteStart, buf, pPresetChunk->Size());
+
+  fprintf(fp, "%s\", %i);\n", buf, pPresetChunk->Size());
+  fclose(fp);
+}

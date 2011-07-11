@@ -126,7 +126,7 @@ public:
   
   // Dump the current state as source code for a call to MakePresetFromNamedParams.
   void DumpPresetSrcCode(const char* filename, const char* paramEnumNames[]);
-//  void DumpPresetBlob(const char* filename);  
+  void DumpPresetBlob(const char* filename);  
   
 protected:
 
@@ -162,6 +162,7 @@ protected:
   // nParamsNamed may be less than the total number of params.
   void MakePresetFromNamedParams(char* name, int nParamsNamed, ...);
   void MakePresetFromChunk(char* name, ByteChunk* pChunk);
+  void MakePresetFromBlob(char* name, const char* blob, int sizeOfChunk);
 
   bool DoesStateChunks() { return mStateChunks; }
   // Will append if the chunk is already started.
