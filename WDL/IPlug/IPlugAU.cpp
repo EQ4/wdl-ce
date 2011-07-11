@@ -956,7 +956,7 @@ void IPlugAU::AssessInputConnections()
   TRACE;
   IMutexLock lock(this);
 
-  SetInputChannelConnections(0, NInChannels(), false);
+  SetInputChannelConnections(0, NInChannels() + mNScInputChans, false);
 
   int nIn = mInBuses.GetSize();
   for (int i = 0; i < nIn; ++i) {
@@ -1363,11 +1363,13 @@ void IPlugAU::ClearConnections()
   }
 }
 
+#pragma mark Constructor
+
 IPlugAU::IPlugAU(IPlugInstanceInfo instanceInfo,
   int nParams, const char* channelIOStr, int nPresets,
   const char* effectName, const char* productName, const char* mfrName,
 	int vendorVersion, int uniqueID, int mfrID, int latency,
-  bool plugDoesMidi, bool plugDoesChunks,  bool plugIsInst)
+  bool plugDoesMidi, bool plugDoesChunks,  bool plugIsInst, int plugScChans)
 : IPlugBase(nParams, channelIOStr, nPresets,
   effectName, productName, mfrName, vendorVersion, uniqueID, mfrID, latency,
   plugDoesMidi, plugDoesChunks, plugIsInst),
@@ -1381,28 +1383,52 @@ IPlugAU::IPlugAU(IPlugInstanceInfo instanceInfo,
   mOSXBundleID.Set(instanceInfo.mOSXBundleID.Get());
   mCocoaViewFactoryClassName.Set(instanceInfo.mCocoaViewFactoryClassName.Get());
 
-  // Every channel pair requested on input or output is a separate bus.
-  int nInputs = NInChannels(), nOutputs = NOutChannels();
-  int nInBuses = (int) ceil(nInputs / 2);
-  int nOutBuses = (int) ceil(nOutputs / 2);
+  mNScInputChans = plugScChans;
+  int nNormalInputs = NInChannels();
+    
+  if (plugScChans && nNormalInputs) // effect with side chain input... 2 input buses
+  {
+    int nNonScInputChans = nNormalInputs - plugScChans;
+    
+    PtrListInitialize(&mInBusConnections, 2);
+    PtrListInitialize(&mInBuses, 2);
+    
+    BusChannels* pInBus = mInBuses.Get(0);
+    pInBus->mNHostChannels = -1;
+    pInBus->mPlugChannelStartIdx = 0;
+    pInBus->mNPlugChannels = nNonScInputChans;
 
-  PtrListInitialize(&mInBusConnections, nInBuses);
-  PtrListInitialize(&mInBuses, nInBuses);
+    BusChannels* pInBus2 = mInBuses.Get(1);
+    pInBus2->mNHostChannels = -1;
+    pInBus2->mPlugChannelStartIdx = nNonScInputChans;
+    pInBus2->mNPlugChannels = plugScChans;
+  }
+  else if (nNormalInputs) // effect with no side chain... 1 bus
+  {
+    PtrListInitialize(&mInBusConnections, 1);
+    PtrListInitialize(&mInBuses, 1);
+    
+    BusChannels* pInBus = mInBuses.Get(0);
+    pInBus->mNHostChannels = -1;
+    pInBus->mPlugChannelStartIdx = 0;
+    pInBus->mNPlugChannels = nNormalInputs;
+  }
+  else { // synth
+    PtrListInitialize(&mInBusConnections, 0);
+    PtrListInitialize(&mInBuses, 0);
+  }
+
+  
+  // allways one output bus
+  int nOutputs = NOutChannels();
+  int nOutBuses = 1;
   PtrListInitialize(&mOutBuses, nOutBuses);
 
-  for (int i = 0, startCh = 0; i < nInBuses; ++i, startCh += 2) {
-    BusChannels* pInBus = mInBuses.Get(i);
-    pInBus->mNHostChannels = -1;
-    pInBus->mPlugChannelStartIdx = startCh;
-    pInBus->mNPlugChannels = MIN(nInputs - startCh, 2);
-  }
-  for (int i = 0, startCh = 0; i < nOutBuses; ++i, startCh += 2) {
-    BusChannels* pOutBus = mOutBuses.Get(i);
-    pOutBus->mNHostChannels = -1;
-    pOutBus->mPlugChannelStartIdx = startCh;
-    pOutBus->mNPlugChannels = MIN(nOutputs - startCh, 2);
-  }
-
+	BusChannels* pOutBus = mOutBuses.Get(0);
+	pOutBus->mNHostChannels = -1;
+	pOutBus->mPlugChannelStartIdx = 0;
+	pOutBus->mNPlugChannels = nOutputs;
+  
   AssessInputConnections();
 
   SetBlockSize(DEFAULT_BLOCK_SIZE);

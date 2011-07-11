@@ -36,8 +36,11 @@
 // make sure this is not the same as BUNDLE_MFR
 #define PLUG_MFR_ID 'Acme'
 
-#define PLUG_CHANNEL_IO "2-2 4-4"
+//the channel io should include the side chain channels
+//it seems that for an AU with side chain input you also need to support no sidechain
+#define PLUG_CHANNEL_IO "2-2 4-2"
 
+#define PLUG_SC_CHANS 2 // audiounit effects only
 #define PLUG_LATENCY 0
 #define PLUG_IS_INST 0
 #define PLUG_DOES_MIDI 0

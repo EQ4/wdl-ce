@@ -28,26 +28,39 @@ IPlugMultiChannel::~IPlugMultiChannel() {}
 void IPlugMultiChannel::ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames)
 {
   // Mutex is already locked for us.
+  
+  //printf("%i %i %i %i\n", IsInChannelConnected(0), IsInChannelConnected(1), IsInChannelConnected(2), IsInChannelConnected(3));
 
-  // hope ninchan == noutchan
-  for (int c = 0; c < NInChannels(); c++) 
+  double* in1 = inputs[0];
+  double* in2 = inputs[1];
+  double* out1 = outputs[0];
+  double* out2 = outputs[1];
+  
+  if (IsInChannelConnected(2) && IsInChannelConnected(3)) // stereo sidechain connected
   {
-    double* in = inputs[c];
-    double* out = outputs[c];
-
-    for (int s = 0; s < nFrames; ++s, ++in, ++out)
+    double* sc1 = inputs[2];
+    double* sc2 = inputs[3];
+    
+    for (int s = 0; s < nFrames; s++)
     {
-        *out = *in * mGain;
+      *(out1++) = *(in1++) * *(sc1++);
+      *(out2++) = *(in2++) * *(sc2++);
     }	
   }
+  else {
+    for (int s = 0; s < nFrames; s++)
+    {
+      *(out1++) = *(in1++);
+      *(out2++) = *(in2++);
+    }	
+  }
+
 }
 
 void IPlugMultiChannel::Reset()
 {
   TRACE;
   IMutexLock lock(this);
-
-  //double sr = GetSampleRate();
 }
 
 void IPlugMultiChannel::OnParamChange(int paramIdx)

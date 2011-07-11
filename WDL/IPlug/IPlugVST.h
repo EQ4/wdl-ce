@@ -19,7 +19,7 @@ public:
 		const char* effectName, const char* productName, const char* mfrName,
 		int vendorVersion, int uniqueID, int mfrID, int latency = 0, 
     bool plugDoesMidi = false, bool plugDoesChunks = false, 
-    bool plugIsInst = false);
+    bool plugIsInst = false, int plugScChans = 0);
 
   // ----------------------------------------
   // See IPlugBase for the full list of methods that your plugin class can implement.

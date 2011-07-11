@@ -33,7 +33,7 @@ public:
 	IPlugAU(IPlugInstanceInfo instanceInfo, int nParams, const char* channelIOStr, int nPresets, 
 		const char* effectName, const char* productName, const char* mfrName,
 		int vendorVersion, int uniqueID, int mfrID, int latency, 
-    bool plugDoesMidi, bool plugDoesChunks,  bool plugIsInst);
+    bool plugDoesMidi, bool plugDoesChunks,  bool plugIsInst, int plugScChans);
 
   virtual ~IPlugAU();
   
@@ -73,6 +73,8 @@ protected:
   
 private:
 
+  int mNScInputChans;
+  
   WDL_String mOSXBundleID, mCocoaViewFactoryClassName;
   ComponentInstance mCI;
   bool mActive, mBypassed, mIsOffline;
